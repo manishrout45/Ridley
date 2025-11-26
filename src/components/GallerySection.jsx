@@ -24,8 +24,8 @@ const GallerySection = ({ className = "" }) => {
   }, []);
 
   return (
-    <section className={` relative w-full overflow-hidden py-10 white ${className}`}>
-      <h2 className="main-heading text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-10">
+    <section className={` relative w-full overflow-hidden py-10 bg-white ${className}`}>
+      <h2 className="main-heading text-3xl sm:text-4xl font-bold  text-gray-900 text-center mb-10">
         Gallery
       </h2>
 
