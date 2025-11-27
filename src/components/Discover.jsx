@@ -11,7 +11,7 @@ const Discover = ({ className = "" }) => {
 
         {/* Description */}
         <p className="max-w-3xl mx-auto mt-6 text-gray-700 leading-relaxed font-medium">
-          Porter Pub offers many versatile settings so whatever mood you're in, you can 
+          Ridley Pub offers many versatile settings so whatever mood you're in, you can 
           find comfort at either location. We have televisions propped at all angles at 
           the pub and many craft beer selections.
         </p>

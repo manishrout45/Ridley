@@ -67,41 +67,62 @@ const About = () => {
         </div>
       </section>
 
-      {/* WHY CHOOSE US */}
-      <section className="py-16 px-6 md:px-12 bg-[#ffffff]">
-        <div className="max-w-6xl mx-auto text-center">
-          <h3 className="text-green-400 tracking-widest text-sm mb-2">
-            WHY CHOOSE US
-          </h3>
-          <h2 className="main-heading text-gray-900 text-3xl md:text-4xl font-bold mb-12">
-            What We Offer
-          </h2>
+      {/* ====== COMBINED SINGLE SECTION ====== */}
+      <section className="relative w-full pb-20">
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-            <div className="p-6 bg-black/40 border border-white/10 rounded-xl hover:bg-black/60 transition">
-              <i className="fa-solid fa-martini-glass-citrus text-4xl text-green-400 mb-4"></i>
-              <h4 className="text-xl font-semibold mb-3">Signature Cocktails</h4>
-              <p className="text-gray-400">
-                Crafted by expert mixologists using premium ingredients.
-              </p>
-            </div>
+        {/* Background Image */}
+        <div className="w-full h-[330px] md:h-[380px] relative">
+          <img
+            src="/assets/images/Ridley03.jpeg"
+            alt="Services"
+            className="w-full h-full object-cover"
+          />
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-teal-700/70"></div>
 
-            <div className="p-6 bg-black/40 border border-white/10 rounded-xl hover:bg-black/60 transition">
-              <i className="fa-solid fa-music text-4xl text-green-400 mb-4"></i>
-              <h4 className="text-xl font-semibold mb-3">Live Music Nights</h4>
-              <p className="text-gray-400">
-                Enjoy performances from top local artists and DJs.
-              </p>
-            </div>
-
-            <div className="p-6 bg-black/40 border border-white/10 rounded-xl hover:bg-black/60 transition">
-              <i className="fa-solid fa-burger text-4xl text-green-400 mb-4"></i>
-              <h4 className="text-xl font-semibold mb-3">Delicious Food</h4>
-              <p className="text-gray-400">
-                Hot, fresh and flavorful dishes to accompany your drinks.
-              </p>
-            </div>
+          {/* Text */}
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white">Our Services</h2>
+            <p className="text-white text-lg mt-4 max-w-2xl">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
           </div>
+        </div>
+
+        {/* ====== SERVICES CARDS BELOW IMAGE ====== */}
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10 mt-24">
+
+          {/* CARD TEMPLATE */}
+          {[
+            { icon: "fa-chart-line", color: "teal-600", title: "Service Name" },
+            { icon: "fa-landmark", color: "gray-800", title: "Service Name" },
+            { icon: "fa-money-bill-wave", color: "teal-600", title: "Service Name" },
+            { icon: "fa-chart-pie", color: "gray-800", title: "Service Name" },
+          ].map((item, i) => (
+            <div key={i} className="text-center relative pt-16">
+
+              {/* Floating icon overlapping image & card */}
+              <div
+                className={`
+                  absolute left-1/2 -top-12 -translate-x-1/2 
+                  w-24 h-24 rounded-full bg-white flex items-center justify-center
+                  shadow-lg border-4 border-${item.color}
+                `}
+              >
+                <i className={`fas ${item.icon} text-3xl text-${item.color}`}></i>
+              </div>
+
+              <h3 className={`text-xl font-bold text-${item.color}`}>
+                {item.title}
+              </h3>
+
+              <p className="text-gray-600 mt-2 px-3">
+                Dolor sit amet, consectetur adipiscing elit, sed diam nonummy
+                nibh euismod tincidunt.
+              </p>
+            </div>
+          ))}
+
         </div>
       </section>
 
