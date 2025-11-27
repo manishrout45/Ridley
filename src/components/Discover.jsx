@@ -1,7 +1,7 @@
 const Discover = ({ className = "" }) => {
   return (
-    <section className={`bg-[#f2f0ed] py-16 px-4 z-50 ${className}`}>
-      <div className="max-w-5xl mx-auto text-center">
+    <section className="bg-[#f2f0ed] py-16 px-4 z-50 ">
+      <div className={`max-w-5xl mx-auto text-center ${className}`}>
 
         {/* Heading */}
         <h2 className="text-4xl font-bold text-gray-800">Discover</h2>

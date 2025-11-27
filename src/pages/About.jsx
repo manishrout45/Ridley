@@ -1,14 +1,11 @@
 import React from "react";
-import useScrollFade from "../hooks/useScrollFade";
 
 const About = () => {
-  useScrollFade("scroll-animate"); // apply fade animation to elements with this class
-
   return (
     <>
       {/* HERO SECTION */}
       <section
-        className="relative w-full min-h-[70vh] bg-cover bg-center flex items-center justify-center px-6 scroll-animate"
+        className="relative w-full min-h-[70vh] bg-cover bg-center flex items-center justify-center px-6"
         style={{ backgroundImage: "url('/assets/images/img1.jpeg')" }}
       >
         <div className="absolute inset-0 bg-black/70"></div>
@@ -18,7 +15,7 @@ const About = () => {
             ABOUT OUR PUB & EXPERIENCE
           </h3>
 
-          <h1 className="main-heading text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+          <h1 className="main-heading text-4xl md:text-6xl font-extrabold leading-tight mb-6 text-white">
             A Place Where Nights Come Alive
           </h1>
 
@@ -30,7 +27,7 @@ const About = () => {
       </section>
 
       {/* ABOUT SECTION */}
-      <section className="w-full py-16 px-6 md:px-12 lg:px-20 scroll-animate">
+      <section className="w-full py-16 px-6 md:px-12 lg:px-20">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left Image */}
           <img
@@ -71,7 +68,7 @@ const About = () => {
       </section>
 
       {/* WHY CHOOSE US */}
-      <section className="py-16 px-6 md:px-12 bg-[#ffffff] scroll-animate">
+      <section className="py-16 px-6 md:px-12 bg-[#ffffff]">
         <div className="max-w-6xl mx-auto text-center">
           <h3 className="text-green-400 tracking-widest text-sm mb-2">
             WHY CHOOSE US
@@ -109,7 +106,7 @@ const About = () => {
       </section>
 
       {/* TEAM SECTION */}
-      <section className="py-16 px-6 md:px-12 scroll-animate">
+      <section className="py-16 px-6 md:px-12">
         <div className="max-w-6xl mx-auto text-center">
           <h3 className="text-green-400 tracking-widest text-sm mb-2">OUR TEAM</h3>
           <h2 className="main-heading text-3xl md:text-4xl font-bold mb-12">
@@ -151,17 +148,17 @@ const About = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-green-700 text-white text-center scroll-animate">
+      <section className="py-16 bg-gray-200 text-gray-900 text-center">
         <h2 className="main-heading text-3xl md:text-4xl font-bold mb-4">
           Ready for an Amazing Night?
         </h2>
-        <p className="text-white/90 mb-8 text-lg max-w-2xl mx-auto">
+        <p className="text-black/90 mb-8 text-lg max-w-2xl mx-auto">
           Book a table today and experience the best nightlife atmosphere in town.
         </p>
 
         <a
           href="/reservation"
-          className="inline-block bg-black px-8 py-4 rounded-full font-semibold hover:bg-gray-800 transition"
+          className="shine-btn inline-block bg-black text-white px-8 py-4 rounded-full font-semibold hover:bg-gray-800 transition"
         >
           Book Now
         </a>

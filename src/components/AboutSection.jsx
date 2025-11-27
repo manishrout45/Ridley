@@ -3,7 +3,7 @@ import { FaMartiniGlassCitrus } from "react-icons/fa6";
 
 const AboutSection = ({ className = "" }) => {
   return (
-    <section className={`relative overflow-hidden max-w-7xl mx-auto px-6 py-16 bg-gray-900 ${className}`}>
+    <section className="relative overflow-hidden max-w-7xl mx-auto px-6 py-16 bg-gray-900 ">
 
   {/* Background Image */}
   <div
@@ -15,7 +15,7 @@ const AboutSection = ({ className = "" }) => {
   <div className="absolute inset-0 bg-green-900/70 z-10"></div>
 
   {/* Main Content */}
-  <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-10 items-center z-20">
+  <div className={`relative grid grid-cols-1 lg:grid-cols-2 gap-10 items-center z-20 ${className}`}>
 
     {/* LEFT TEXT SECTION */}
     <div>

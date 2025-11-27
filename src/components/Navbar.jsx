@@ -76,10 +76,10 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex items-center bg-white bg-opacity-90 rounded-full px-4 py-2 space-x-2 shadow-lg">
-          {["index", "about", "events", "gallery", "contact"].map((item) => (
+          {["home", "about", "events", "gallery", "contact"].map((item) => (
             <Link
               key={item}
-              to={`/${item}.html`}
+              to={`/${item}`}
               className={`nav-item ${
                 path === item ? "active-item" : ""
               }`}
@@ -118,10 +118,10 @@ const Navbar = () => {
 
   {/* Sidebar Links */}
   <div className="space-y-4">
-    {["index", "about", "events", "gallery", "contact"].map((item) => (
+    {["home", "about", "events", "gallery", "contact"].map((item) => (
       <Link
         key={item}
-        to={`/${item}.html`}
+        to={`/${item}`}
         className={`nav-item block text-white hover:text-green-400 capitalize 
         ${path === item ? "active-item" : ""}`}
         onClick={() => setMobileOpen(false)} // close menu on click

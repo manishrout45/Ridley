@@ -1,236 +1,86 @@
-import React, { useState } from "react";
-import {
-  FaUser,
-  FaEnvelope,
-  FaPhone,
-  FaCalendarAlt,
-  FaRegCommentDots,
-  FaMotorcycle,
-} from "react-icons/fa";
+import React from "react";
 
-const Booking = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    bikeModel: "",
-    startDate: "",
-    endDate: "",
-    message: "",
-  });
+const eventsData = [
+  {
+    title: "DJ Night - Live EDM",
+    date: "Friday, 8:00 PM",
+    img: "/assets/events/event1.jpg",
+    description: "Experience a high-energy EDM night with top DJs and stunning lights."
+  },
+  {
+    title: "Bollywood Fusion Night",
+    date: "Saturday, 9:00 PM",
+    img: "/assets/events/event2.jpg",
+    description: "Dance to the best Bollywood & Punjabi mixes all night long."
+  },
+  {
+    title: "Ladies Night Specials",
+    date: "Thursday, 7:30 PM",
+    img: "/assets/events/event3.jpg",
+    description: "Free drinks for ladies and a live DJ to keep the vibes energetic."
+  },
+  {
+    title: "Live Band Evening",
+    date: "Sunday, 7:00 PM",
+    img: "/assets/events/event4.jpg",
+    description: "Relax with soulful live music from top local and international bands."
+  }
+];
 
-  const handleChange = (e) => {
-    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    const { name, email, phone, bikeModel, startDate, endDate, message } = formData;
-
-    const whatsappText = `*New Booking Request*%0A
-👤 Name: ${name}%0A
-📧 Email: ${email}%0A
-📞 Phone: ${phone}%0A
-🏍️ Bike Model: ${bikeModel}%0A
-📅 Rental Dates: ${startDate} to ${endDate}%0A
-📝 Additional Message: ${message}`;
-
-    const phoneNumber = "919124320206"; // ✅ Replace with your WhatsApp number
-    const whatsappURL = `https://wa.me/${phoneNumber}?text=${whatsappText}`;
-
-    window.open(whatsappURL, "_blank");
-  };
-
+const Events = () => {
   return (
-    <div className="bg-gray-100 mt-10">
-      {/* Hero Section */}
-      <div
-        className="bg-cover bg-center h-72 flex items-center justify-center text-white"
-        style={{
-          backgroundImage:
-            "url('https://img.freepik.com/free-photo/rainbow-end-road-landscape_23-2151596648.jpg?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740')",
-        }}
-      >
-        
-        <h1 className="text-4xl font-bold drop-shadow-lg" data-aos="fade-down">
-          Book Your Ride
-        </h1>
-      </div>
-
-      {/* Step Section */}
-<section className="py-20 bg-white" data-aos="fade-up">
-  <div className="container mx-auto px-4 max-w-6xl">
-    <h2 className="text-3xl font-extrabold text-center mb-12 text-gray-800">How It Works</h2>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-      {/* Step 1 */}
-      <div className="bg-gray-50 rounded-2xl shadow-md p-8 hover:bg-green-100 transition-all duration-300">
-        <div className="w-16 h-16 flex items-center justify-center bg-green-200 text-green-700 text-3xl rounded-full mx-auto mb-6">
-          🚗
-        </div>
-        <h3 className="text-xl font-semibold text-center mb-3">Choose a Vehicle</h3>
-        <p className="text-gray-600 text-center">Browse our listings and pick the perfect car for your trip.</p>
-      </div>
+    <section className="w-full bg-black text-white py-16 px-6 sm:px-10">
       
-      {/* Step 2 */}
-      <div className="bg-gray-50 rounded-2xl shadow-md p-8 hover:bg-yellow-100 transition-all duration-300">
-        <div className="w-16 h-16 flex items-center justify-center bg-yellow-200 text-yellow-700 text-3xl rounded-full mx-auto mb-6">
-          📝
-        </div>
-        <h3 className="text-xl font-semibold text-center mb-3">Fill Booking Form</h3>
-        <p className="text-gray-600 text-center">Enter your details, rental dates, and preferences.</p>
+      {/* Heading */}
+      <div className="text-center mb-12">
+        <h3 className="text-green-500 tracking-widest text-sm mb-2 uppercase">
+          Upcoming Events
+        </h3>
+
+        <h1 className="text-4xl sm:text-5xl font-bold">
+          Experience the Nightlife
+        </h1>
+
+        <p className="text-gray-400 max-w-2xl mx-auto mt-4">
+          Join us for electrifying music, stunning performances, and unforgettable nights.
+        </p>
       </div>
 
-      {/* Step 3 */}
-      <div className="bg-gray-50 rounded-2xl shadow-md p-8 hover:bg-blue-100 transition-all duration-300">
-        <div className="w-16 h-16 flex items-center justify-center bg-blue-200 text-blue-700 text-3xl rounded-full mx-auto mb-6">
-          ✅
-        </div>
-        <h3 className="text-xl font-semibold text-center mb-3">Confirm & Ride</h3>
-        <p className="text-gray-600 text-center">We’ll confirm your booking and you’re ready to go!</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-      {/* Booking Form */}
-      <section className="py-16" data-aos="fade-up">
-        <div className="container mx-auto px-4 flex flex-col lg:flex-row gap-10 max-w-5xl">
-          {/* Form Section */}
-          <div className="flex-1 bg-white p-8 rounded-lg shadow-md">
-            <h2 className="text-2xl font-bold mb-6 text-gray-800">Booking Form</h2>
-            <form className="space-y-5" onSubmit={handleSubmit}>
-              <div>
-                <label className="block text-gray-700 mb-1">Full Name</label>
-                <div className="flex items-center border border-gray-300 rounded px-3 py-2">
-                  <FaUser className="text-gray-500 mr-2" />
-                  <input
-                    type="text"
-                    name="name"
-                    required
-                    className="w-full focus:outline-none"
-                    onChange={handleChange}
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-gray-700 mb-1">Email Address</label>
-                <div className="flex items-center border border-gray-300 rounded px-3 py-2">
-                  <FaEnvelope className="text-gray-500 mr-2" />
-                  <input
-                    type="email"
-                    name="email"
-                    required
-                    className="w-full focus:outline-none"
-                    onChange={handleChange}
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-gray-700 mb-1">Phone Number</label>
-                <div className="flex items-center border border-gray-300 rounded px-3 py-2">
-                  <FaPhone className="text-gray-500 mr-2" />
-                  <input
-                    type="tel"
-                    name="phone"
-                    required
-                    className="w-full focus:outline-none"
-                    onChange={handleChange}
-                  />
-                </div>
-              </div>
-
-              {/* Bike Model Field */}
-              <div>
-                <label className="block text-gray-700 mb-1">Bike Model</label>
-                <div className="flex items-center border border-gray-300 rounded px-3 py-2">
-                  <FaMotorcycle className="text-gray-500 mr-2" />
-                  <input
-                    type="text"
-                    name="bikeModel"
-                    required
-                    className="w-full focus:outline-none"
-                    onChange={handleChange}
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-gray-700 mb-1">Rental Dates</label>
-                <div className="flex gap-4">
-                  <div className="flex items-center border border-gray-300 rounded px-3 py-2 w-1/2">
-                    <FaCalendarAlt className="text-gray-500 mr-2" />
-                    <input
-                      type="date"
-                      name="startDate"
-                      required
-                      className="w-full focus:outline-none"
-                      onChange={handleChange}
-                    />
-                  </div>
-                  <div className="flex items-center border border-gray-300 rounded px-3 py-2 w-1/2">
-                    <FaCalendarAlt className="text-gray-500 mr-2" />
-                    <input
-                      type="date"
-                      name="endDate"
-                      required
-                      className="w-full focus:outline-none"
-                      onChange={handleChange}
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-gray-700 mb-1">Additional Requests</label>
-                <div className="flex items-start border border-gray-300 rounded px-3 py-2">
-                  <FaRegCommentDots className="text-gray-500 mr-2 mt-1" />
-                  <textarea
-                    name="message"
-                    rows="4"
-                    className="w-full focus:outline-none"
-                    onChange={handleChange}
-                  ></textarea>
-                </div>
-              </div>
-
-              <button
-                type="submit"
-                className="bg-green-600 text-white w-full py-3 rounded-full font-semibold hover:bg-green-700 transition mt-8"
-              >
-                Send Booking via WhatsApp
-              </button>
-            </form>
-          </div>
-
-          {/* Contact Info */}
-          <div className="flex-1 bg-yellow-100 p-8 rounded-lg shadow-sm flex flex-col justify-between">
-            <div>
-              <h3 className="text-xl font-semibold mb-4 text-blue-800">Need Help?</h3>
-              <p className="text-gray-700 mb-6">
-                If you have any questions or need assistance with your booking, feel free to contact us.
-              </p>
-              <ul className="space-y-4 text-gray-700">
-                <li>📧 <strong>Email:</strong> onnroad2016@gmail.com</li>
-                <li>☎️ <strong>Phone:</strong> +91 768 283 7771</li>
-                <li>📍 <strong>Location:</strong> Puri, Odisha</li>
-              </ul>
-            </div>
-
+      {/* Event Cards */}
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        {eventsData.map((event, index) => (
+          <div
+            key={index}
+            className="relative group rounded-2xl overflow-hidden shadow-lg"
+          >
+            {/* Event Image */}
             <img
-              src="https://img.freepik.com/free-vector/order-ride-concept-illustration_114360-5040.jpg"
-              alt="Customer Support"
-              className=" w-full h-auto rounded-md shadow-md"
-              data-aos="fade-up"
+              src={event.img}
+              alt={event.title}
+              className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
             />
+
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/50 to-black/90 opacity-80"></div>
+
+            {/* Event Content */}
+            <div className="absolute bottom-0 p-6">
+              <h2 className="text-2xl font-semibold mb-1 group-hover:text-green-400 transition">
+                {event.title}
+              </h2>
+
+              <p className="text-sm text-gray-300 mb-2">{event.date}</p>
+
+              <p className="text-gray-400 text-sm leading-5">
+                {event.description}
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
-    </div>
+        ))}
+      </div>
+
+    </section>
   );
 };
 
-export default Booking;
+export default Events;

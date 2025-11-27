@@ -14,10 +14,10 @@ const Home = () => {
       <Discover className="fade-left" />
       <AboutSection className="fade-right" />
       <ScrollPromo className="zoom-in" />
-<section className="fade-up w-full py-20 px-4 md:px-8 max-w-7xl mx-auto bg-[#f8f6f3]">
-
+<section className=" w-full py-20 px-4 md:px-8 max-w-7xl mx-auto bg-[#f8f6f3]">
+<div className="fade-up">
   {/* Title */}
-  <div className="text-center mb-20">
+  <div className="text-center mb-20 ">
     <h2 className="text-gray-900 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-[2px] leading-tight">
       TIMELESS AMBIANCE,
       <br />
@@ -133,7 +133,7 @@ const Home = () => {
     </div>
 
   </div>
-
+</div>
 </section>
 
 
@@ -160,7 +160,7 @@ const Home = () => {
       className="feature-item 
                  flex flex-col items-center gap-2 sm:gap-3
                  transition-all duration-300 ease-out
-                 hover:scale-110 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.6)]"
+                 hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,215,0,0.7)]"
     >
       <i className="fa-solid fa-martini-glass-citrus text-3xl sm:text-4xl"></i>
       <p className="text-xs sm:text-sm md:text-base">Drinks & Cocktails</p>
@@ -171,7 +171,7 @@ const Home = () => {
       className="feature-item 
                  flex flex-col items-center gap-2 sm:gap-3
                  transition-all duration-300 ease-out
-                 hover:scale-110 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.6)]"
+                 hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,215,0,0.7)]"
     >
       <i className="fa-solid fa-burger text-3xl sm:text-4xl"></i>
       <p className="text-xs sm:text-sm md:text-base">Delicious Food</p>
@@ -182,7 +182,7 @@ const Home = () => {
       className="feature-item 
                  flex flex-col items-center gap-2 sm:gap-3
                  transition-all duration-300 ease-out
-                 hover:scale-110 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.6)]"
+                 hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,215,0,0.7)]"
     >
       <i className="fa-solid fa-music text-3xl sm:text-4xl"></i>
       <p className="text-xs sm:text-sm md:text-base">Live Music</p>
@@ -193,7 +193,7 @@ const Home = () => {
       className="feature-item 
                  flex flex-col items-center gap-2 sm:gap-3
                  transition-all duration-300 ease-out
-                 hover:scale-110 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.6)]"
+                 hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,215,0,0.7)]"
     >
       <i className="fa-solid fa-people-line text-3xl sm:text-4xl"></i>
       <p className="text-xs sm:text-sm md:text-base">Dance Floor</p>
@@ -204,7 +204,7 @@ const Home = () => {
       className="feature-item 
                  flex flex-col items-center gap-2 sm:gap-3
                  transition-all duration-300 ease-out
-                 hover:scale-110 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.6)]"
+                 hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,215,0,0.7)]"
     >
       <i className="fa-solid fa-lightbulb text-3xl sm:text-4xl"></i>
       <p className="text-xs sm:text-sm md:text-base">Club Lighting</p>
@@ -215,7 +215,7 @@ const Home = () => {
       className="feature-item 
                  flex flex-col items-center gap-2 sm:gap-3
                  transition-all duration-300 ease-out
-                 hover:scale-110 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.6)]"
+                 hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,215,0,0.7)]"
     >
       <i className="fa-solid fa-headphones text-3xl sm:text-4xl"></i>
       <p className="text-xs sm:text-sm md:text-base">DJ Booth</p>
@@ -226,7 +226,7 @@ const Home = () => {
       className="feature-item 
                  flex flex-col items-center gap-2 sm:gap-3
                  transition-all duration-300 ease-out
-                 hover:scale-110 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.6)]"
+                 hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,215,0,0.7)]"
     >
       <i className="fa-solid fa-microphone text-3xl sm:text-4xl"></i>
       <p className="text-xs sm:text-sm md:text-base">Wireless Microphones</p>
@@ -237,7 +237,7 @@ const Home = () => {
       className="feature-item 
                  flex flex-col items-center gap-2 sm:gap-3
                  transition-all duration-300 ease-out
-                 hover:scale-110 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.6)]"
+                 hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,215,0,0.7)]"
     >
       <i className="fa-solid fa-bars-staggered text-3xl sm:text-4xl"></i>
       <p className="text-xs sm:text-sm md:text-base">Bar Menu</p>
@@ -251,7 +251,6 @@ const Home = () => {
 
       {/* Private Dining Section */}
 <section className="fade-left max-w-7xl mx-auto py-16 px-6 grid md:grid-cols-2 gap-12 items-center bg-white">
-
   {/* Left: Image Grid */}
   <div className="grid grid-cols-2 gap-4">
     <img src="/assets/images/OriginalDrinks.jpeg" alt="" className="rounded-md object-cover w-full h-48" />

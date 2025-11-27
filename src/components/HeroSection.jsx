@@ -90,13 +90,13 @@ const HeroSection = () => {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 opacity-0 animate-fadeIn" style={{ animationDelay: "1.2s" }}>
           <a
             href="#reservation"
-            className="bg-green-600 hover:bg-green-700 text-white px-4 sm:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-lg shadow-md transition w-auto"
+            className="shine-btn bg-green-600 hover:bg-green-700 text-white px-4 sm:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-lg shadow-md transition w-auto"
           >
             Book a Table
           </a>
           <a
             href="#menu"
-            className="bg-white/10 backdrop-blur-lg hover:bg-white/20 border border-white/30 text-white px-4 sm:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-lg transition w-auto"
+            className="shine-btn bg-white/10 backdrop-blur-lg hover:bg-white/20 border border-white/30 text-white px-4 sm:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-lg transition w-auto"
           >
             View Menu
           </a>
