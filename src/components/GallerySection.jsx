@@ -40,10 +40,10 @@ const GallerySection = ({ className = "" }) => {
         {[
           { img: "/assets/images/OriginalDrinks.jpeg", title: "STRONG ALCOHOL" },
           { img: "/assets/images/nightlife-people-having-fun-bars-clubs.jpg", title: "CONCERT LIVE" },
-          { img: "/assets/images/nightlife-people-having-fun-bars-clubs.jpg", title: "GREAT ATMOSPHERE" },
+          { img: "/assets/images/restaurant-interior.jpg", title: "GREAT ATMOSPHERE" },
           { img: "/assets/images/shish-kebab-with-colorful-bell-peppers-served-with-ketchup-fresh-vegetables.jpg", title: "DELICIOUS FOOD" },
           { img: "/assets/images/nightlife-people-having-fun-bars-clubs.jpg", title: "FRIENDS & FUN" },
-          { img: "https://img.freepik.com/free-photo/chef-preparing-dish-kitchen_155003-3678.jpg", title: "MASTER CHEF" },
+          { img: "/assets/images/Ridley03.jpeg", title: "MASTER CHEF" },
           { img: "/assets/images/nightlife-people-having-fun-bars-clubs.jpg", title: "NIGHT PARTY" },
           { img: "/assets/images/OriginalDrinks.jpeg", title: "SIGNATURE COCKTAILS" },
         ].map((item, index) => (
