@@ -3,32 +3,32 @@ import { FaStar, FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const testimonials = [
   {
-    name: "Mahbub Uddin",
+    name: "MJ Patil",
     role: "Teacher, Alampur",
-    image: "/assets/testimonials/user1.png",
+    image: "https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg?semt=ais_hybrid&w=740&q=80",
     text:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
   },
   {
-    name: "Sophia Arman",
+    name: "Karan Sharma",
     role: "HR Manager",
-    image: "/assets/testimonials/user2.png",
+    image: "https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg?semt=ais_hybrid&w=740&q=80",
     text:
       "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Aute irure dolor in reprehenderit.",
   },
   {
-    name: "Jackson Lee",
+    name: "Sandeep Kumar",
     role: "Project Supervisor",
     image:
-      "/assets/testimonials/user3.png",
+      "https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg?semt=ais_hybrid&w=740&q=80",
     text:
       "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
   {
-    name: "Laura Fernandez",
+    name: "Sunita Kumari",
     role: "Product Designer",
     image:
-      "/assets/testimonials/user4.png",
+      "https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg?semt=ais_hybrid&w=740&q=80",
     text:
       "Excepteur sint occaecat cupidatat non proident. Sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
