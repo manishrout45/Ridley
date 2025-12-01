@@ -30,7 +30,7 @@ const slides = [
 const HeroSection = () => {
   const [current, setCurrent] = useState(0);
 
-  // Change slide every 6 seconds
+  // Auto-slide every 6s
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
@@ -42,28 +42,32 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background */}
-      {slide.type === "image" ? (
-        <img
-          src={slide.src}
-          alt="hero"
-          className="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out"
-        />
-      ) : (
-        <video
-          src={slide.src}
-          autoPlay
-          loop
-          muted
-          className="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out"
-        />
-      )}
+      {/* Background Slides */}
+      {slides.map((s, index) => (
+        <div
+          key={index}
+          className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out
+            ${index === current ? "opacity-100 z-10 animate-kenburns" : "opacity-0 z-0"}`}
+        >
+          {s.type === "image" ? (
+            <img src={s.src} alt="hero" className="w-full h-full object-cover" />
+          ) : (
+            <video
+              src={s.src}
+              autoPlay
+              loop
+              muted
+              className="w-full h-full object-cover"
+            />
+          )}
+        </div>
+      ))}
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/70"></div>
+      <div className="absolute inset-0 bg-black/70 z-20"></div>
 
       {/* Text Content */}
-      <div className="relative z-10 text-center max-w-3xl px-4 sm:px-6 md:px-8">
+      <div className="relative z-30 text-center max-w-3xl px-4 sm:px-6 md:px-8">
         <p
           key={current + "-sub"}
           className="text-green-400 tracking-[0.3em] text-[10px] sm:text-sm mb-2 sm:mb-4 uppercase opacity-0 animate-fadeIn"
@@ -71,6 +75,7 @@ const HeroSection = () => {
         >
           {slide.subheading}
         </p>
+
         <h1
           key={current + "-head"}
           className="text-white font-extrabold drop-shadow-md text-3xl sm:text-5xl md:text-6xl leading-snug sm:leading-tight mb-3 md:mb-6 opacity-0 animate-fadeIn"
@@ -78,6 +83,7 @@ const HeroSection = () => {
         >
           {slide.heading}
         </h1>
+
         <p
           key={current + "-desc"}
           className="text-gray-300 text-sm sm:text-lg md:text-xl mb-5 md:mb-8 max-w-2xl mx-auto opacity-0 animate-fadeIn"
@@ -103,16 +109,41 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Tailwind Keyframes for fadeIn */}
+      {/* Carousel Dots */}
+      <div className="absolute bottom-6 sm:bottom-10 w-full flex justify-center gap-3 z-40">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrent(index)}
+            className={`w-3 h-3 sm:w-4 sm:h-4 rounded-full transition-all duration-300 ${
+              current === index
+                ? "bg-white scale-125 shadow-[0_0_10px_rgba(255,255,255,0.9)]"
+                : "bg-white/40 hover:bg-white/70"
+            }`}
+          ></button>
+        ))}
+      </div>
+
+      {/* Animations */}
       <style>
         {`
-          @keyframes fadeIn {
-            0% { opacity: 0; transform: translateY(20px); }
-            100% { opacity: 1; transform: translateY(0); }
-          }
-          .animate-fadeIn {
-            animation: fadeIn 1s forwards;
-          }
+        /* Text Fade In */
+        @keyframes fadeIn {
+          0% { opacity: 0; transform: translateY(20px); }
+          100% { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn {
+          animation: fadeIn 1s forwards;
+        }
+
+        /* Ken Burns Effect (Subtle Zoom) */
+        @keyframes kenburns {
+          0% { transform: scale(1); }
+          100% { transform: scale(1.05); }
+        }
+        .animate-kenburns {
+          animation: kenburns 6s ease-in-out forwards;
+        }
         `}
       </style>
     </section>

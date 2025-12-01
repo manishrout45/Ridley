@@ -3,6 +3,7 @@ import Discover from "../components/Discover";
 import GallerySection from "../components/GallerySection";
 import HeroSection from "../components/HeroSection";
 import ScrollPromo from "../components/ScrollPromo";
+import Testimonial from "../components/Testimonial";
 import useScrollFade from "../hooks/useScrollFade";
 
 const Home = () => {
@@ -14,127 +15,140 @@ const Home = () => {
       <Discover className="fade-left" />
       <AboutSection className="fade-right" />
       <ScrollPromo className="zoom-in" />
-<section className=" w-full py-20 px-4 md:px-8 max-w-7xl mx-auto bg-[#f8f6f3]">
-<div className="fade-up">
-  {/* Title */}
-  <div className="text-center mb-20 ">
-    <h2 className="text-gray-900 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-[2px] leading-tight">
-      TIMELESS AMBIANCE,
-      <br />
-      <span className="text-green-700">UNFORGETTABLE MOMENTS</span>
-    </h2>
+<section className="w-full py-16 bg-[#f8f6f3]">
+  <div className="fade-up px-4 md:px-6 max-w-7xl mx-auto">
 
-    <div className="w-20 h-[3px] bg-gradient-to-r from-green-700 to-green-500 mx-auto mt-4 rounded-full"></div>
-
-    <p className="text-gray-600 mt-5 max-w-xl mx-auto leading-relaxed">
-      A curated luxury dining atmosphere blending refinement, craftsmanship,
-      and immersive modern interiors.
-    </p>
-  </div>
-
-  {/* TOP GRID */}
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-
-    {/* Left Image */}
-    <div className="rounded-3xl overflow-hidden shadow-2xl transform hover:-translate-y-2 transition-all duration-700">
-      <img 
-        src="/assets/images/img1.jpeg"
-        className="w-full h-72 md:h-full object-cover transition-all duration-700"
-        alt="Dining Interior"
-      />
-    </div>
-
-    {/* Center Glass Card */}
-    <div className="backdrop-blur-xl bg-white/20 border border-white/40 rounded-3xl shadow-2xl p-10 text-center
-                    hover:shadow-[0_10px_40px_rgba(0,0,0,0.2)] transition-all duration-700">
-
-      <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 tracking-wide leading-tight">
-        EXPERIENCE THE  
-        <span className="text-green-700"> NEXT ERA </span>
-        <br /> OF DINING
+    {/* Title */}
+    <div className="text-center mb-14">
+      <h2 className="text-gray-900 text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-[1px] leading-snug">
+        TIMELESS AMBIANCE,
+        <br />
+        <span className="text-green-700">UNFORGETTABLE MOMENTS</span>
       </h2>
 
-      <p className="text-gray-700 leading-relaxed font-medium">
-        Where premium seasonal ingredients meet refined craftsmanship  
-        to create remarkable culinary moments.
+      <div className="w-16 h-[3px] bg-gradient-to-r from-green-700 to-green-500 mx-auto mt-3 rounded-full"></div>
+
+      <p className="text-gray-600 mt-4 max-w-md mx-auto text-sm leading-relaxed">
+        A curated luxury dining experience blending elegance and modern interiors.
       </p>
-
-      <button
-        className="shine-btn mt-6 bg-green-700 hover:bg-green-800 text-white px-8 py-3 rounded-full text-sm font-semibold tracking-wider transition-all duration-500 shadow-lg hover:shadow-red-300">
-        EXPLORE MORE
-      </button>
-
     </div>
 
-    {/* Right Card */}
-    <div className="rounded-3xl overflow-hidden bg-white shadow-2xl 
-                    hover:-translate-y-2 hover:shadow-xl transition-all duration-700">
-      <img 
-        src="/assets/images/restaurant-interior.jpg"
-        className="w-full h-52 md:h-64 object-cover transition duration-700"
-        alt="Restaurant Interior"
-      />
-      <div className="p-6">
-        <div className="w-16 h-[2px] bg-green-600 mb-3"></div>
-        <p className="text-gray-700 text-base leading-relaxed">
-          Exclusive private lounges crafted for intimate gatherings,
-          elite business dinners, and special celebrations.
-        </p>
-      </div>
-    </div>
+    {/* TOP GRID */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-  </div>
-
-  {/* BOTTOM GRID */}
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-14">
-
-    {/* Left Image with Modern Overlay */}
-    <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-      <img 
-        src="/assets/images/restaurant-interior(1).jpg"
-        className="w-full h-72 md:h-full object-cover transition-all duration-700"
-        alt="Modern Interior"
-      />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/70"></div>
-
-      <h2 className="absolute bottom-6 left-6 text-white text-xl md:text-2xl font-bold leading-snug drop-shadow-xl">
-        SOPHISTICATED<br />INTERIOR DESIGN
-      </h2>
-    </div>
-
-    {/* Center Premium White-Gold Card */}
-    <div className="bg-gradient-to-b from-white to-[#fff8f2] rounded-3xl shadow-2xl p-12 text-center 
-                    border border-green-200 hover:-translate-y-2 transition duration-700">
-
-      <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden shadow-xl mx-auto mb-6 ring-4 ring-red-100">
-        <img 
-          src="/assets/images/Ridley03.jpeg"
-          className="w-full h-full object-cover"
-          alt="Chef"
+      {/* Left Image */}
+      <div className="rounded-2xl overflow-hidden shadow-xl h-full flex transform transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl">
+        <img
+          src="/assets/images/img1.jpeg"
+          className="w-full h-52 md:h-full object-cover transition-all duration-700 hover:scale-110"
         />
       </div>
 
-      <p className="text-gray-700 text-base leading-relaxed font-medium">
-        <span className="text-green-700 font-bold tracking-wide">
-          Signature Gourmet Craftsmanship
-        </span>
-        <br />
-        Created with precision, passion, and world-class culinary mastery.
-      </p>
+     {/* Center Card */}
+<div className="backdrop-blur-xl bg-white/30 border border-white/40 rounded-2xl shadow-xl p-6 text-center h-full flex flex-col justify-center 
+                transform transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl ">
+
+  <h2 className="
+        text-xl 
+        md:text-2xl 
+        lg:text-4xl          /* BIG SIZE ONLY ON DESKTOP */
+        font-extrabold text-gray-900 mb-3 leading-snug
+      ">
+    EXPERIENCE THE  
+    <span className="text-green-700"> NEXT ERA </span>
+    <br /> OF DINING
+  </h2>
+
+  <p className="
+        text-gray-700 
+        text-sm 
+        md:text-base         /* Slightly bigger on tablet */
+        lg:text-lg           /* Bigger on desktop */
+        leading-relaxed
+      ">
+    Crafted with premium ingredients and refined techniques.
+  </p>
+
+<button
+  className="
+    mt-4 bg-green-700 hover:bg-green-800 text-white
+    px-4 py-2 rounded-full 
+    text-xs md:text-sm 
+    tracking-normal md:tracking-wide lg:tracking-normal 
+    transition-all duration-500 shadow-md hover:shadow-lg
+    lg:px-2 w-[22vh] 
+    mx-auto                /* 🔥 CENTER THE BUTTON */
+  "
+>
+  EXPLORE MORE
+</button>
+</div>
+
+      {/* Right Card */}
+      <div className="rounded-2xl overflow-hidden bg-white shadow-xl h-full flex flex-col transform transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl">
+        <img
+          src="/assets/images/restaurant-interior.jpg"
+          className="w-full h-44 md:h-full object-cover transition-all duration-700 hover:scale-110"
+        />
+        <div className="p-4">
+          <div className="w-12 h-[2px] bg-green-600 mb-2"></div>
+          <p className="text-gray-700 text-sm leading-relaxed">
+            Exclusive lounges designed for private dining and celebrations.
+          </p>
+        </div>
+      </div>
+
     </div>
 
-    {/* Right Image */}
-    <div className="rounded-3xl overflow-hidden shadow-2xl">
-      <img 
-        src="/assets/images/OriginalDrinks.jpeg"
-        className="w-full h-72 md:h-full object-cover hover:scale-110 transition duration-700"
-        alt="Original Drinks"
-      />
+    {/* BOTTOM GRID */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+
+      {/* Left Image */}
+      <div className="relative rounded-2xl overflow-hidden shadow-xl h-full flex transform transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl">
+        <img
+          src="/assets/images/restaurant-interior(1).jpg"
+          className="w-full h-52 md:h-full object-cover transition-all duration-700 hover:scale-110"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/70"></div>
+
+        <h2 className="absolute bottom-4 left-4 text-white text-lg md:text-xl font-bold leading-snug drop-shadow-xl">
+          SOPHISTICATED<br />INTERIOR DESIGN
+        </h2>
+      </div>
+
+      {/* Center Card */}
+      <div className="bg-gradient-to-b from-white to-[#fff8f2] rounded-2xl shadow-xl p-8 text-center border border-green-200 h-full flex flex-col justify-center 
+                      transform transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl">
+
+        <div className="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden shadow-md mx-auto mb-4 ring-2 ring-green-100">
+          <img
+            src="/assets/images/Ridley03.jpeg"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        <p className="text-gray-700 text-sm leading-relaxed">
+          <span className="text-green-700 font-bold">
+            Signature Gourmet Touch
+          </span>
+          <br />
+          Crafted with passion and world-class precision.
+        </p>
+      </div>
+
+      {/* Right Image */}
+      <div className="rounded-2xl overflow-hidden shadow-xl h-full flex transform transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl">
+        <img
+          src="/assets/images/OriginalDrinks.jpeg"
+          className="w-full h-52 md:h-full object-cover transition-all duration-700 hover:scale-110"
+        />
+      </div>
+
     </div>
 
   </div>
-</div>
 </section>
+
 
 
 <section className=" relative bg-[#1a001f] py-12 sm:py-16 lg:py-20">
@@ -250,37 +264,43 @@ const Home = () => {
     <GallerySection className="zoom-in" />
 
       {/* Private Dining Section */}
-<section className="fade-left max-w-7xl mx-auto py-16 px-6 grid md:grid-cols-2 gap-12 items-center bg-white">
-  {/* Left: Image Grid */}
-  <div className="grid grid-cols-2 gap-4">
-    <img src="/assets/images/OriginalDrinks.jpeg" alt="" className="rounded-md object-cover w-full h-48" />
-    <img src="/assets/images/Ridley03.jpeg" alt="" className="rounded-md object-cover w-full h-48" />
-    <img src="/assets/images/shish-kebab-with-colorful-bell-peppers-served-with-ketchup-fresh-vegetables.jpg" alt="" className="rounded-md object-cover w-full h-48" />
-    <img src="/assets/images/img1.jpeg" alt="" className="rounded-md object-cover w-full h-48" />
+<section className="fade-left py-16 px-6 bg-white">
+  
+  {/* Content Wrapper (max-width applied here) */}
+  <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+
+    {/* Left: Image Grid */}
+    <div className="grid grid-cols-2 gap-4">
+      <img src="/assets/images/OriginalDrinks.jpeg" alt="" className="rounded-md object-cover w-full h-48" />
+      <img src="/assets/images/Ridley03.jpeg" alt="" className="rounded-md object-cover w-full h-48" />
+      <img src="/assets/images/shish-kebab-with-colorful-bell-peppers-served-with-ketchup-fresh-vegetables.jpg" alt="" className="rounded-md object-cover w-full h-48" />
+      <img src="/assets/images/img1.jpeg" alt="" className="rounded-md object-cover w-full h-48" />
+    </div>
+
+    {/* Right: Text */}
+    <div className="text-center md:text-left">
+      <h2 className="text-3xl font-serif font-bold mb-6 text-gray-800">
+        Private dining<br />& events
+      </h2>
+
+      <p className="text-gray-600 leading-relaxed mb-6">
+        There are four private spaces available for lunch, dinner or indeed at any
+        other time like receptions, presentations or brainstorms. In addition the
+        restaurant is available for breakfast & private hire as are all the other
+        spaces.
+      </p>
+
+      <button
+        onClick={() => alert("Reservation button clicked!")}
+        className="shine-btn bg-gray-800 text-white px-6 py-3 rounded-md hover:bg-gray-700 transition"
+      >
+        RESERVATION
+      </button>
+    </div>
+
   </div>
-
-  {/* Right: Text */}
-  <div className="text-center md:text-left">
-    <h2 className="text-3xl font-serif font-bold mb-6 text-gray-800">
-      Private dining<br />& events
-    </h2>
-
-    <p className="text-gray-600 leading-relaxed mb-6">
-      There are four private spaces available for lunch, dinner or indeed at any
-      other time like receptions, presentations or brainstorms. In addition the
-      restaurant is available for breakfast & private hire as are all the other
-      spaces.
-    </p>
-
-    <button
-      onClick={() => alert("Reservation button clicked!")}
-      className="shine-btn bg-gray-800 text-white px-6 py-3 rounded-md hover:bg-gray-700 transition"
-    >
-      RESERVATION
-    </button>
-  </div>
-
 </section>
+
 
       {/* Contact Section With Background Image + Black Overlay */}
 <section
@@ -315,73 +335,129 @@ const Home = () => {
       />
 
       {/* Right Form Section */}
-      <div className="bg-white rounded-xl shadow-lg p-6 sm:p-10">
+<div className="
+  bg-white rounded-xl shadow-lg 
+  p-6 sm:p-10 md:p-6   /* SMALLER PADDING ON TABLET ONLY */
+">
 
-        {/* Contact Header */}
-        <div className="flex flex-col sm:flex-row items-center justify-between text-sm mb-6 border-b pb-4 gap-4">
+  {/* Contact Header */}
+  <div className="
+      flex flex-col sm:flex-row items-center justify-between
+      text-sm md:text-xs   /* SMALLER TEXT ON TABLET */
+      mb-6 md:mb-4         /* Reduced margin on tablet */
+      border-b pb-4 gap-4
+    ">
 
-          {/* Call */}
-          <div className="text-center sm:text-left">
-            <p className="text-gray-500">CALL US</p>
-            <p className="font-semibold text-lg text-green-600">+123 456 789 00</p>
-          </div>
+    {/* Call */}
+    <div className="text-center sm:text-left">
+      <p className="text-gray-500 md:text-xs">CALL US</p>
+      <p className="font-semibold text-lg md:text-sm text-green-600">
+        +123 456 789 00
+      </p>
+    </div>
 
-          <div className="text-gray-400 font-semibold hidden sm:block">OR</div>
+    <div className="text-gray-400 font-semibold hidden sm:block md:text-xs">
+      OR
+    </div>
 
-          {/* Email */}
-          <div className="text-center sm:text-right">
-            <p className="text-gray-500">EMAIL US</p>
-            <p className="font-semibold text-lg text-green-600">INFO@RIDLEY.COM</p>
-          </div>
-        </div>
+    {/* Email */}
+    <div className="text-center sm:text-right">
+      <p className="text-gray-500 md:text-xs">EMAIL US</p>
+      <p className="font-semibold text-lg md:text-sm text-green-600">
+        INFO@RIDLEY.COM
+      </p>
+    </div>
+  </div>
 
-        {/* Form */}
-        <form className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+  {/* Form */}
+  <form className="
+      grid grid-cols-1 md:grid-cols-2 
+      gap-4 sm:gap-6 md:gap-3   /* Smaller gap on tablet */
+    ">
 
-          <input
-            type="text"
-            placeholder="*Full Name"
-            className="border p-3 rounded-md w-full text-sm text-gray-700"
-          />
+    <input
+      type="text"
+      placeholder="*Full Name"
+      className="
+        border p-3 md:p-2    /* SMALLER INPUT HEIGHT ON TABLET */
+        rounded-md w-full 
+        text-sm md:text-xs   /* SMALL TEXT ON TABLET */
+        text-gray-700
+      "
+    />
 
-          <input
-            type="text"
-            placeholder="*Email Address"
-            className="border p-3 rounded-md w-full text-sm text-gray-700"
-          />
+    <input
+      type="text"
+      placeholder="*Email Address"
+      className="
+        border p-3 md:p-2 
+        rounded-md w-full 
+        text-sm md:text-xs 
+        text-gray-700
+      "
+    />
 
-          <input
-            type="text"
-            placeholder="DD-MM-YYYY"
-            className="border p-3 rounded-md w-full text-sm text-gray-700"
-          />
+    <input
+      type="text"
+      placeholder="DD-MM-YYYY"
+      className="
+        border p-3 md:p-2 
+        rounded-md w-full 
+        text-sm md:text-xs 
+        text-gray-700
+      "
+    />
 
-          <select className="border p-3 rounded-md w-full text-sm text-gray-700">
-            <option>Evening</option>
-          </select>
+    <select className="
+        border p-3 md:p-2 
+        rounded-md w-full 
+        text-sm md:text-xs 
+        text-gray-700
+      ">
+      <option>Evening</option>
+    </select>
 
-          <select className="border p-3 rounded-md w-full text-sm text-gray-700">
-            <option>1 Person</option>
-          </select>
+    <select className="
+        border p-3 md:p-2 
+        rounded-md w-full 
+        text-sm md:text-xs 
+        text-gray-700
+      ">
+      <option>1 Person</option>
+    </select>
 
-          <select className="border p-3 rounded-md w-full text-sm text-gray-700">
-            <option>1 Kid</option>
-          </select>
+    <select className="
+        border p-3 md:p-2 
+        rounded-md w-full 
+        text-sm md:text-xs 
+        text-gray-700
+      ">
+      <option>1 Kid</option>
+    </select>
 
-        </form>
+  </form>
 
-        {/* Button */}
-        <button
-          className="shine-btn w-full bg-red-700 hover:bg-red-800 transition text-white font-semibold py-3 sm:py-4 rounded-md mt-6 sm:mt-8 text-sm sm:text-base"
-        >
-          RESERVE YOUR TABLE NOW
-        </button>
+  {/* Button */}
+  <button
+    className="
+      shine-btn w-full 
+      bg-red-700 hover:bg-red-800 
+      transition text-white font-semibold 
+      py-3 sm:py-4 md:py-2    /* SMALLER BUTTON HEIGHT ON TABLET */
+      rounded-md 
+      mt-6 sm:mt-8 md:mt-4    /* Smaller spacing on tablet */
+      text-sm sm:text-base md:text-xs  /* SMALL TEXT ON TABLET */
+    "
+  >
+    RESERVE YOUR TABLE NOW
+  </button>
 
-      </div>
+</div>
+
     </div>
   </div>
 </section>
-
+<Testimonial />
 
     </>
   );

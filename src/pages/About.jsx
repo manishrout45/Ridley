@@ -1,5 +1,10 @@
 import React from "react";
-
+  const services = [
+    { icon: "fa-chart-line", color: "teal-600", title: "Service Name" },
+    { icon: "fa-landmark", color: "gray-700", title: "Service Name" },
+    { icon: "fa-money-bill-wave", color: "teal-600", title: "Service Name" },
+    { icon: "fa-chart-pie", color: "gray-700", title: "Service Name" },
+  ];
 const About = () => {
   return (
     <>
@@ -67,107 +72,156 @@ const About = () => {
         </div>
       </section>
 
-      {/* ====== COMBINED SINGLE SECTION ====== */}
-      <section className="relative w-full pb-20">
+          <section className="relative w-full pb-24">
 
-        {/* Background Image */}
-        <div className="w-full h-[330px] md:h-[380px] relative">
-          <img
-            src="/assets/images/Ridley03.jpeg"
-            alt="Services"
-            className="w-full h-full object-cover"
-          />
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-teal-700/70"></div>
+      {/* Background Section */}
+      <div className="relative w-full h-[340px] md:h-[380px]">
+        <img
+          src="/assets/images/Ridley03.jpeg"
+          alt="Services"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-teal-700/70"></div>
 
-          {/* Text */}
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-            <h2 className="text-4xl md:text-5xl font-bold text-white">Our Services</h2>
-            <p className="text-white text-lg mt-4 max-w-2xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit
-            </p>
-          </div>
-        </div>
-
-        {/* ====== SERVICES CARDS BELOW IMAGE ====== */}
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10 mt-24">
-
-          {/* CARD TEMPLATE */}
-          {[
-            { icon: "fa-chart-line", color: "teal-600", title: "Service Name" },
-            { icon: "fa-landmark", color: "gray-800", title: "Service Name" },
-            { icon: "fa-money-bill-wave", color: "teal-600", title: "Service Name" },
-            { icon: "fa-chart-pie", color: "gray-800", title: "Service Name" },
-          ].map((item, i) => (
-            <div key={i} className="text-center relative pt-16">
-
-              {/* Floating icon overlapping image & card */}
-              <div
-                className={`
-                  absolute left-1/2 -top-12 -translate-x-1/2 
-                  w-24 h-24 rounded-full bg-white flex items-center justify-center
-                  shadow-lg border-4 border-${item.color}
-                `}
-              >
-                <i className={`fas ${item.icon} text-3xl text-${item.color}`}></i>
-              </div>
-
-              <h3 className={`text-xl font-bold text-${item.color}`}>
-                {item.title}
-              </h3>
-
-              <p className="text-gray-600 mt-2 px-3">
-                Dolor sit amet, consectetur adipiscing elit, sed diam nonummy
-                nibh euismod tincidunt.
-              </p>
-            </div>
-          ))}
-
-        </div>
-      </section>
-
-      {/* TEAM SECTION */}
-      <section className="py-16 px-6 md:px-12">
-        <div className="max-w-6xl mx-auto text-center">
-          <h3 className="text-green-400 tracking-widest text-sm mb-2">OUR TEAM</h3>
-          <h2 className="main-heading text-3xl md:text-4xl font-bold mb-12">
-            Meet the Experts
+        {/* Heading */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white">
+            Our Services
           </h2>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-            <div className="bg-black/40 p-6 rounded-xl border border-white/10">
-              <img
-                src="/assets/images/Ridley03.jpeg"
-                className="w-full h-64 rounded-lg object-cover mb-6"
-                alt="John Doe"
-              />
-              <h4 className="text-xl font-semibold">John Doe</h4>
-              <p className="text-green-400">Head Mixologist</p>
-            </div>
-
-            <div className="bg-black/40 p-6 rounded-xl border border-white/10">
-              <img
-                src="/assets/images/Ridley03.jpeg"
-                className="w-full h-64 rounded-lg object-cover mb-6"
-                alt="Sarah Jones"
-              />
-              <h4 className="text-xl font-semibold">Sarah Jones</h4>
-              <p className="text-green-400">Event Manager</p>
-            </div>
-
-            <div className="bg-black/40 p-6 rounded-xl border border-white/10">
-              <img
-                src="/assets/images/Ridley03.jpeg"
-                className="w-full h-64 rounded-lg object-cover mb-6"
-                alt="Michael Smith"
-              />
-              <h4 className="text-xl font-semibold">Michael Smith</h4>
-              <p className="text-green-400">Executive Chef</p>
-            </div>
-          </div>
+          <p className="text-white text-lg mt-3 max-w-2xl">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </p>
         </div>
-      </section>
+      </div>
 
+      {/* SERVICE CARDS */}
+<div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10 mt-[-70px]">
+
+  {services.map((item, index) => (
+    <div
+      key={index}
+      className="
+        group bg-white rounded-lg shadow-md pt-16 pb-6 px-4 text-center relative
+        transition-all duration-300 hover:-translate-y-2 hover:shadow-xl
+      "
+    >
+
+      {/* ICON CIRCLE (hover effects included) */}
+      <div
+        className={`
+          absolute left-1/2 -top-12 -translate-x-1/2 
+          w-24 h-24 rounded-full bg-white border-4 shadow-xl flex items-center justify-center
+          border-${item.color}
+          transition-all duration-300
+          group-hover:border-teal-500 group-hover:scale-110
+        `}
+      >
+        <i
+          className={`
+            fas ${item.icon} text-3xl text-${item.color}
+            transition-all duration-300 group-hover:text-teal-500
+          `}
+        ></i>
+      </div>
+
+      {/* TITLE */}
+      <h3
+        className={`
+          text-xl font-bold text-${item.color} mt-2
+          transition-colors duration-300 group-hover:text-teal-500
+        `}
+      >
+        {item.title}
+      </h3>
+
+      {/* PARAGRAPH */}
+      <p className="text-gray-600 mt-2 text-sm">
+        Dolor sit amet, consectetur adipiscing elit, sed diam nonummy
+        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+      </p>
+    </div>
+  ))}
+
+</div>
+
+    </section>
+
+<section className="w-full py-16 bg-white">
+      <div className="max-w-6xl mx-auto text-center mb-12">
+        <h3 className="text-green-400 tracking-widest text-sm mb-2">
+          OUR TEAM
+        </h3>
+        <h2 className="main-heading text-3xl md:text-4xl font-bold">
+          Meet the Experts
+        </h2>
+      </div>
+
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-10 text-center">
+
+        {/* Card 1 (UP) */}
+        <div className="flex flex-col items-center -mt-6">
+          <div className="border-4 border-teal-500 p-1">
+            <img src="/assets/team1.jpg" className="w-40 h-40 object-cover" />
+          </div>
+          <h3 className="text-lg font-semibold text-teal-600 mt-4">Anita Smith</h3>
+          <p className="font-bold text-gray-900">Marketing Manager</p>
+          <p className="text-sm mt-2 text-gray-600 w-48">
+            This slide is 100% editable. Adapt it to your needs and capture your audience's attention.
+          </p>
+        </div>
+
+        {/* Card 2 (DOWN) */}
+        <div className="flex flex-col items-center mt-6">
+          <div className="border-4 border-purple-500 p-1">
+            <img src="/assets/team2.jpg" className="w-40 h-40 object-cover" />
+          </div>
+          <h3 className="text-lg font-semibold text-purple-600 mt-4">Tom Parker</h3>
+          <p className="font-bold text-gray-900">Product Marketing Manager</p>
+          <p className="text-sm mt-2 text-gray-600 w-48">
+            This slide is 100% editable. Adapt it to your needs and capture your audience's attention.
+          </p>
+        </div>
+
+        {/* Card 3 (UP) */}
+        <div className="flex flex-col items-center -mt-6">
+          <div className="border-4 border-teal-500 p-1">
+            <img src="/assets/team3.jpg" className="w-40 h-40 object-cover" />
+          </div>
+          <h3 className="text-lg font-semibold text-teal-600 mt-4">Mary Smith</h3>
+          <p className="font-bold text-gray-900">Marketing Director</p>
+          <p className="text-sm mt-2 text-gray-600 w-48">
+            This slide is 100% editable. Adapt it to your needs and capture your audience's attention.
+          </p>
+        </div>
+
+        {/* Card 4 (DOWN) */}
+        <div className="flex flex-col items-center mt-6">
+          <div className="border-4 border-purple-500 p-1">
+            <img src="/assets/team4.jpg" className="w-40 h-40 object-cover" />
+          </div>
+          <h3 className="text-lg font-semibold text-purple-600 mt-4">John Doe</h3>
+          <p className="font-bold text-gray-900">Digital Marketing Manager</p>
+          <p className="text-sm mt-2 text-gray-600 w-48">
+            This slide is 100% editable. Adapt it to your needs and capture your audience's attention.
+          </p>
+        </div>
+
+        {/* Card 5 (UP) */}
+        <div className="flex flex-col items-center -mt-6">
+          <div className="border-4 border-teal-500 p-1">
+            <img src="/assets/team5.jpg" className="w-40 h-40 object-cover" />
+          </div>
+          <h3 className="text-lg font-semibold text-teal-600 mt-4">Carol Smith</h3>
+          <p className="font-bold text-gray-900">Sales Manager</p>
+          <p className="text-sm mt-2 text-gray-600 w-48">
+            This slide is 100% editable. Adapt it to your needs and capture your audience's attention.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+      
       {/* CTA */}
       <section className="py-16 bg-gray-200 text-gray-900 text-center">
         <h2 className="main-heading text-3xl md:text-4xl font-bold mb-4">

@@ -34,7 +34,7 @@ const Navbar = () => {
     >
       {/* Top Contact Bar */}
       <div className="w-full">
-        <div className="bg-black bg-opacity-0 text-white text-sm px-4 py-2 flex justify-between items-center">
+        <div className="bg-black bg-opacity-0 text-white text-sm max-w-7xl mx-auto px-4 py-2 flex justify-between items-center">
 
           <div className="flex items-center space-x-6">
             <span className="flex items-center space-x-2">
@@ -66,7 +66,7 @@ const Navbar = () => {
       {/* Main Navbar */}
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         {/* LOGO */}
-        <Link to="/index.html" className="flex items-center">
+        <Link to="/" className="flex items-center">
           <img
             src="/assets/images/logo/TurtleMascotPNG-01.png"
             alt="Ridley Logo"

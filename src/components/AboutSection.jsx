@@ -3,7 +3,7 @@ import { FaMartiniGlassCitrus } from "react-icons/fa6";
 
 const AboutSection = ({ className = "" }) => {
   return (
-    <section className="relative overflow-hidden max-w-7xl mx-auto px-6 py-16 bg-gray-900 ">
+    <section className="relative overflow-hidden  py-16 bg-gray-900 ">
 
   {/* Background Image */}
   <div
@@ -15,7 +15,7 @@ const AboutSection = ({ className = "" }) => {
   <div className="absolute inset-0 bg-green-900/70 z-10"></div>
 
   {/* Main Content */}
-  <div className={`relative grid grid-cols-1 lg:grid-cols-2 gap-10 items-center z-20 ${className}`}>
+  <div className={`relative grid grid-cols-1 lg:grid-cols-2 max-w-7xl mx-auto px-6 gap-10 items-center z-20 ${className}`}>
 
     {/* LEFT TEXT SECTION */}
     <div>
@@ -30,12 +30,12 @@ const AboutSection = ({ className = "" }) => {
       </h2>
 
       <p className="text-gray-300 leading-relaxed mb-4">
-        A culinary haven offering a tantalizing array of flavorful dishes...
+        Ridley Pub in Bhubaneswar is a cozy and welcoming spot known for its lively atmosphere, good food and refreshing drinks. 
+        It’s a great place to relax with friends, enjoy music and unwind after a long day. 
+        With a warm ambiance and friendly service, Ridley Pub offers the perfect setting for a fun and enjoyable evening.
       </p>
 
-      <p className="text-gray-300 leading-relaxed mb-8">
-        A gastronomic delight, serving a tantalizing array of savory dishes...
-      </p>
+     
 
       {/* Stats */}
       <div className="flex items-center gap-12 mb-10">
