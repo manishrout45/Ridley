@@ -53,7 +53,7 @@ const Footer = () => {
 
           <div className="space-y-4">
             <div className="flex gap-3">
-              <img src="/assets/images/img1.jpeg" className="w-16 h-16 rounded-lg object-cover" alt="" />
+              <img src="/assets/images/OrgImg/Ridley_Img2.jpeg" className="w-16 h-16 rounded-lg object-cover" alt="" />
               <div>
                 <p className="text-sm opacity-90">Even the all-powerful Pointing has no control about…</p>
                 <p className="text-xs opacity-60 mt-1">Oct 15, 2020 &nbsp; Admin</p>
@@ -61,7 +61,7 @@ const Footer = () => {
             </div>
 
             <div className="flex gap-3">
-              <img src="/assets/images/img2.jpg" className="w-16 h-16 rounded-lg object-cover" alt="" />
+              <img src="/assets/images/OrgImg/Ridley_Img1.jpeg" className="w-16 h-16 rounded-lg object-cover" alt="" />
               <div>
                 <p className="text-sm opacity-90">Even the all-powerful Pointing has no control about…</p>
                 <p className="text-xs opacity-60 mt-1">Oct 15, 2020 &nbsp; Admin</p>
@@ -105,11 +105,11 @@ const Footer = () => {
 
           <div className="grid grid-cols-3 gap-2">
             <img src="/assets/images/nightlife-people-having-fun-bars-clubs.jpg" className="w-full h-20 object-cover rounded" alt="" />
-            <img src="/assets/images/restaurant-interior(1).jpg" className="w-full h-20 object-cover rounded" alt="" />
-            <img src="/assets/images/restaurant-interior.jpg" className="w-full h-20 object-cover rounded" alt="" />
+            <img src="/assets/images/OrgImg/Ridley_Img3.jpeg" className="w-full h-20 object-cover rounded" alt="" />
+            <img src="/assets/images/OrgImg/Ridley_Img2.jpeg" className="w-full h-20 object-cover rounded" alt="" />
             <img src="/assets/images/shish-kebab-with-colorful-bell-peppers-served-with-ketchup-fresh-vegetables.jpg" className="w-full h-20 object-cover rounded" alt="" />
-            <img src="/assets/images/Ridley03.jpeg" className="w-full h-20 object-cover rounded" alt="" />
-            <img src="/assets/images/OriginalDrinks.jpeg" className="w-full h-20 object-cover rounded" alt="" />
+            <img src="/assets/images/OrgImg/Ridley_Img4.jpeg" className="w-full h-20 object-cover rounded" alt="" />
+            <img src="/assets/images/OrgImg/Ridley_Img1.jpeg" className="w-full h-20 object-cover rounded" alt="" />
           </div>
         </div>
       </div>

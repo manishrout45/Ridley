@@ -1,7 +1,9 @@
 import AboutSection from "../components/AboutSection";
+import Booking from "../components/Booking";
 import Discover from "../components/Discover";
 import GallerySection from "../components/GallerySection";
 import HeroSection from "../components/HeroSection";
+import HeroVideoSection from "../components/HeroVideoSection";
 import ScrollPromo from "../components/ScrollPromo";
 import Testimonial from "../components/Testimonial";
 import useScrollFade from "../hooks/useScrollFade";
@@ -39,7 +41,7 @@ const Home = () => {
       {/* Left Image */}
       <div className="rounded-2xl overflow-hidden shadow-xl h-full flex transform transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl">
         <img
-          src="/assets/images/img1.jpeg"
+          src="/assets/images/OrgImg/Ridley_Img3.jpeg"
           className="w-full h-52 md:h-full object-cover transition-all duration-700 hover:scale-110"
         />
       </div>
@@ -87,7 +89,7 @@ const Home = () => {
       {/* Right Card */}
       <div className="rounded-2xl overflow-hidden bg-white shadow-xl h-full flex flex-col transform transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl">
         <img
-          src="/assets/images/restaurant-interior.jpg"
+          src="/assets/images/RidleyImg/RidleyIMG-04.jpeg"
           className="w-full h-44 md:h-full object-cover transition-all duration-700 hover:scale-110"
         />
         <div className="p-4">
@@ -106,7 +108,7 @@ const Home = () => {
       {/* Left Image */}
       <div className="relative rounded-2xl overflow-hidden shadow-xl h-full flex transform transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl">
         <img
-          src="/assets/images/restaurant-interior(1).jpg"
+          src="/assets/images/OrgImg/Ridley_Img2.jpeg"
           className="w-full h-52 md:h-full object-cover transition-all duration-700 hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/70"></div>
@@ -122,7 +124,7 @@ const Home = () => {
 
         <div className="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden shadow-md mx-auto mb-4 ring-2 ring-green-100">
           <img
-            src="/assets/images/Ridley03.jpeg"
+            src="/assets/images/OrgImg/Ridley_Img4.jpeg"
             className="w-full h-full object-cover"
           />
         </div>
@@ -139,7 +141,7 @@ const Home = () => {
       {/* Right Image */}
       <div className="rounded-2xl overflow-hidden shadow-xl h-full flex transform transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl">
         <img
-          src="/assets/images/OriginalDrinks.jpeg"
+          src="/assets/images/OrgImg/Ridley_Img1.jpeg"
           className="w-full h-52 md:h-full object-cover transition-all duration-700 hover:scale-110"
         />
       </div>
@@ -262,6 +264,7 @@ const Home = () => {
 
 
     <GallerySection className="zoom-in" />
+    <HeroVideoSection className="zoom-in" />
 
       {/* Private Dining Section */}
 <section className="fade-left py-16 px-6 bg-white">
@@ -271,10 +274,10 @@ const Home = () => {
 
     {/* Left: Image Grid */}
     <div className="grid grid-cols-2 gap-4">
-      <img src="/assets/images/OriginalDrinks.jpeg" alt="" className="rounded-md object-cover w-full h-48" />
-      <img src="/assets/images/Ridley03.jpeg" alt="" className="rounded-md object-cover w-full h-48" />
+      <img src="/assets/images/OrgImg/Ridley_Img1.jpeg" alt="" className="rounded-md object-cover w-full h-48" />
+      <img src="/assets/images/OrgImg/Ridley_Img2.jpeg" alt="" className="rounded-md object-cover w-full h-48" />
       <img src="/assets/images/shish-kebab-with-colorful-bell-peppers-served-with-ketchup-fresh-vegetables.jpg" alt="" className="rounded-md object-cover w-full h-48" />
-      <img src="/assets/images/img1.jpeg" alt="" className="rounded-md object-cover w-full h-48" />
+      <img src="/assets/images/OrgImg/Ridley_Img3.jpeg" alt="" className="rounded-md object-cover w-full h-48" />
     </div>
 
     {/* Right: Text */}
@@ -284,10 +287,9 @@ const Home = () => {
       </h2>
 
       <p className="text-gray-600 leading-relaxed mb-6">
-        There are four private spaces available for lunch, dinner or indeed at any
-        other time like receptions, presentations or brainstorms. In addition the
-        restaurant is available for breakfast & private hire as are all the other
-        spaces.
+There are four private spaces available for lunch, dinner, or any time you need from receptions and presentations to team meetings or celebrations. Each room offers a welcoming atmosphere with customizable setups to perfectly match your event requirements and preferences, ensuring comfort throughout.
+
+The restaurant is also available for breakfast and can be hired exclusively for private events. All other spaces can be booked as well, providing flexible layouts and attentive service for any occasion or special gathering, ensuring a memorable and seamless experience.
       </p>
 
       <button
@@ -302,161 +304,7 @@ const Home = () => {
 </section>
 
 
-      {/* Contact Section With Background Image + Black Overlay */}
-<section
-  className="fade-up relative w-full bg-cover bg-center bg-no-repeat py-12 sm:py-16 px-4 sm:px-8 flex flex-col items-center"
-  style={{ backgroundImage: "url('/assets/images/img1.jpeg')" }}
->
-
-  {/* Black Overlay */}
-  <div className="absolute inset-0 bg-black/60"></div>
-
-  {/* Content Wrapper */}
-  <div className="relative z-10 w-full flex flex-col items-center">
-
-    {/* Subheading */}
-    <h3 className="text-center text-xs sm:text-sm tracking-widest text-green-300 mb-2">
-      BOOK YOUR TABLE
-    </h3>
-
-    {/* Heading */}
-    <h2 className="main-heading text-center text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 sm:mb-10 leading-snug">
-      GROUSE DINNER AT FRENCH<br />RESTAURANT
-    </h2>
-
-    {/* Layout Grid */}
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 w-full max-w-6xl">
-
-      {/* Left Image */}
-      <img
-        src="/assets/images/Ridley03.jpeg"
-        className="bounce-hover rounded-xl shadow-lg w-full h-64 sm:h-80 md:h-full object-cover"
-        alt="Dining Area"
-      />
-
-      {/* Right Form Section */}
-<div className="
-  bg-white rounded-xl shadow-lg 
-  p-6 sm:p-10 md:p-6   /* SMALLER PADDING ON TABLET ONLY */
-">
-
-  {/* Contact Header */}
-  <div className="
-      flex flex-col sm:flex-row items-center justify-between
-      text-sm md:text-xs   /* SMALLER TEXT ON TABLET */
-      mb-6 md:mb-4         /* Reduced margin on tablet */
-      border-b pb-4 gap-4
-    ">
-
-    {/* Call */}
-    <div className="text-center sm:text-left">
-      <p className="text-gray-500 md:text-xs">CALL US</p>
-      <p className="font-semibold text-lg md:text-sm text-green-600">
-        +123 456 789 00
-      </p>
-    </div>
-
-    <div className="text-gray-400 font-semibold hidden sm:block md:text-xs">
-      OR
-    </div>
-
-    {/* Email */}
-    <div className="text-center sm:text-right">
-      <p className="text-gray-500 md:text-xs">EMAIL US</p>
-      <p className="font-semibold text-lg md:text-sm text-green-600">
-        INFO@RIDLEY.COM
-      </p>
-    </div>
-  </div>
-
-  {/* Form */}
-  <form className="
-      grid grid-cols-1 md:grid-cols-2 
-      gap-4 sm:gap-6 md:gap-3   /* Smaller gap on tablet */
-    ">
-
-    <input
-      type="text"
-      placeholder="*Full Name"
-      className="
-        border p-3 md:p-2    /* SMALLER INPUT HEIGHT ON TABLET */
-        rounded-md w-full 
-        text-sm md:text-xs   /* SMALL TEXT ON TABLET */
-        text-gray-700
-      "
-    />
-
-    <input
-      type="text"
-      placeholder="*Email Address"
-      className="
-        border p-3 md:p-2 
-        rounded-md w-full 
-        text-sm md:text-xs 
-        text-gray-700
-      "
-    />
-
-    <input
-      type="text"
-      placeholder="DD-MM-YYYY"
-      className="
-        border p-3 md:p-2 
-        rounded-md w-full 
-        text-sm md:text-xs 
-        text-gray-700
-      "
-    />
-
-    <select className="
-        border p-3 md:p-2 
-        rounded-md w-full 
-        text-sm md:text-xs 
-        text-gray-700
-      ">
-      <option>Evening</option>
-    </select>
-
-    <select className="
-        border p-3 md:p-2 
-        rounded-md w-full 
-        text-sm md:text-xs 
-        text-gray-700
-      ">
-      <option>1 Person</option>
-    </select>
-
-    <select className="
-        border p-3 md:p-2 
-        rounded-md w-full 
-        text-sm md:text-xs 
-        text-gray-700
-      ">
-      <option>1 Kid</option>
-    </select>
-
-  </form>
-
-  {/* Button */}
-  <button
-    className="
-      shine-btn w-full 
-      bg-red-700 hover:bg-red-800 
-      transition text-white font-semibold 
-      py-3 sm:py-4 md:py-2    /* SMALLER BUTTON HEIGHT ON TABLET */
-      rounded-md 
-      mt-6 sm:mt-8 md:mt-4    /* Smaller spacing on tablet */
-      text-sm sm:text-base md:text-xs  /* SMALL TEXT ON TABLET */
-    "
-  >
-    RESERVE YOUR TABLE NOW
-  </button>
-
-</div>
-
-    </div>
-  </div>
-</section>
+<Booking />
 <Testimonial />
 
     </>

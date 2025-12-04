@@ -1,10 +1,31 @@
 import React from "react";
-  const services = [
-    { icon: "fa-chart-line", color: "teal-600", title: "Service Name" },
-    { icon: "fa-landmark", color: "gray-700", title: "Service Name" },
-    { icon: "fa-money-bill-wave", color: "teal-600", title: "Service Name" },
-    { icon: "fa-chart-pie", color: "gray-700", title: "Service Name" },
-  ];
+const services = [
+  {
+    icon: "fa-cocktail",
+    color: "teal-600",
+    title: "Signature Cocktails",
+    desc: "Enjoy our handcrafted cocktails made by expert bartenders with premium ingredients."
+  },
+  {
+    icon: "fa-music",
+    color: "gray-700",
+    title: "Live DJ & Music",
+    desc: "Feel the vibe with live DJs, curated playlists, and energetic nightlife entertainment."
+  },
+  {
+    icon: "fa-utensils",
+    color: "teal-600",
+    title: "Delicious Food",
+    desc: "Taste our chef’s special menu—from starters to full meals crafted to perfection."
+  },
+  {
+    icon: "fa-beer",
+    color: "gray-700",
+    title: "Premium Drinks",
+    desc: "Choose from a wide range of beers, wine, whiskey, and international beverages."
+  }
+];
+
 const About = () => {
   return (
     <>
@@ -72,154 +93,155 @@ const About = () => {
         </div>
       </section>
 
-          <section className="relative w-full pb-24">
+      <section className="relative w-full pb-8">
 
-      {/* Background Section */}
-      <div className="relative w-full h-[340px] md:h-[380px]">
-        <img
-          src="/assets/images/Ridley03.jpeg"
-          alt="Services"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-teal-700/70"></div>
+  {/* Background Section */}
+  <div className="relative w-full h-[340px] md:h-[380px]">
+    <img
+      src="/assets/images/Ridley03.jpeg"
+      alt="Services"
+      className="w-full h-full object-cover"
+    />
+    <div className="absolute inset-0 bg-teal-700/70"></div>
 
-        {/* Heading */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-          <h2 className="text-4xl md:text-5xl font-bold text-white">
-            Our Services
-          </h2>
-          <p className="text-white text-lg mt-3 max-w-2xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          </p>
-        </div>
-      </div>
-
-      {/* SERVICE CARDS */}
-<div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10 mt-[-70px]">
-
-  {services.map((item, index) => (
-    <div
-      key={index}
-      className="
-        group bg-white rounded-lg shadow-md pt-16 pb-6 px-4 text-center relative
-        transition-all duration-300 hover:-translate-y-2 hover:shadow-xl
-      "
-    >
-
-      {/* ICON CIRCLE (hover effects included) */}
-      <div
-        className={`
-          absolute left-1/2 -top-12 -translate-x-1/2 
-          w-24 h-24 rounded-full bg-white border-4 shadow-xl flex items-center justify-center
-          border-${item.color}
-          transition-all duration-300
-          group-hover:border-teal-500 group-hover:scale-110
-        `}
-      >
-        <i
-          className={`
-            fas ${item.icon} text-3xl text-${item.color}
-            transition-all duration-300 group-hover:text-teal-500
-          `}
-        ></i>
-      </div>
-
-      {/* TITLE */}
-      <h3
-        className={`
-          text-xl font-bold text-${item.color} mt-2
-          transition-colors duration-300 group-hover:text-teal-500
-        `}
-      >
-        {item.title}
-      </h3>
-
-      {/* PARAGRAPH */}
-      <p className="text-gray-600 mt-2 text-sm">
-        Dolor sit amet, consectetur adipiscing elit, sed diam nonummy
-        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    {/* Heading */}
+    <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+      <h2 className="text-4xl md:text-5xl font-bold text-white">
+        Our Services
+      </h2>
+      <p className="text-white text-lg mt-3 max-w-2xl">
+        Enjoy premium hospitality, crafted beverages, and unforgettable experiences.
       </p>
     </div>
-  ))}
+  </div>
 
-</div>
+  {/* SERVICE CARDS */}
+  <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10 mt-[-70px]">
 
-    </section>
+    {services.map((item, index) => (
+      <div
+        key={index}
+        className="
+          group bg-white rounded-lg shadow-md pt-16 pb-6 px-4 text-center relative
+          transition-all duration-300 hover:-translate-y-2 hover:shadow-xl
+        "
+      >
+
+        {/* ICON CIRCLE */}
+        <div
+          className={`
+            absolute left-1/2 -top-12 -translate-x-1/2 
+            w-24 h-24 rounded-full bg-white border-4 shadow-xl flex items-center justify-center
+            border-${item.color}
+            transition-all duration-300
+            group-hover:border-teal-500 group-hover:scale-110
+          `}
+        >
+          <i
+            className={`
+              fas ${item.icon} text-3xl text-${item.color}
+              transition-all duration-300 group-hover:text-teal-500
+            `}
+          ></i>
+        </div>
+
+        {/* TITLE */}
+        <h3
+          className={`
+            text-xl font-bold text-${item.color} mt-2
+            transition-colors duration-300 group-hover:text-teal-500
+          `}
+        >
+          {item.title}
+        </h3>
+
+        {/* PARAGRAPH */}
+        <p className="text-gray-600 mt-2 text-sm">
+          {item.desc}
+        </p>
+      </div>
+    ))}
+
+  </div>
+
+</section>
+
 
 <section className="w-full py-16 bg-white">
-      <div className="max-w-6xl mx-auto text-center mb-12">
-        <h3 className="text-green-400 tracking-widest text-sm mb-2">
-          OUR TEAM
-        </h3>
-        <h2 className="main-heading text-3xl md:text-4xl font-bold">
-          Meet the Experts
-        </h2>
+  <div className="max-w-6xl mx-auto text-center mb-12">
+    <h3 className="text-green-400 tracking-widest text-sm mb-2">
+      OUR TEAM
+    </h3>
+    <h2 className="main-heading text-3xl md:text-4xl font-bold">
+      Meet the Experts
+    </h2>
+  </div>
+
+  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-10 text-center">
+
+    {/* Card 1 (UP) */}
+    <div className="flex flex-col items-center -mt-6">
+      <div className="border-4 border-teal-500 p-1">
+        <img src="https://www.caterermiddleeast.com/cloud/2025/08/13/Jeet-Verma-Beverage-Manager-1-1024x768.jpg" className="w-40 h-40 object-cover" />
       </div>
+      <h3 className="text-lg font-semibold text-teal-600 mt-4">Suman Mishra</h3>
+      <p className="font-bold text-gray-900">Pub Manager</p>
+      <p className="text-sm mt-2 text-gray-600 w-48">
+        Ensuring smooth operations, quality service, and customer satisfaction every day.
+      </p>
+    </div>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-10 text-center">
-
-        {/* Card 1 (UP) */}
-        <div className="flex flex-col items-center -mt-6">
-          <div className="border-4 border-teal-500 p-1">
-            <img src="/assets/team1.jpg" className="w-40 h-40 object-cover" />
-          </div>
-          <h3 className="text-lg font-semibold text-teal-600 mt-4">Anita Smith</h3>
-          <p className="font-bold text-gray-900">Marketing Manager</p>
-          <p className="text-sm mt-2 text-gray-600 w-48">
-            This slide is 100% editable. Adapt it to your needs and capture your audience's attention.
-          </p>
-        </div>
-
-        {/* Card 2 (DOWN) */}
-        <div className="flex flex-col items-center mt-6">
-          <div className="border-4 border-purple-500 p-1">
-            <img src="/assets/team2.jpg" className="w-40 h-40 object-cover" />
-          </div>
-          <h3 className="text-lg font-semibold text-purple-600 mt-4">Tom Parker</h3>
-          <p className="font-bold text-gray-900">Product Marketing Manager</p>
-          <p className="text-sm mt-2 text-gray-600 w-48">
-            This slide is 100% editable. Adapt it to your needs and capture your audience's attention.
-          </p>
-        </div>
-
-        {/* Card 3 (UP) */}
-        <div className="flex flex-col items-center -mt-6">
-          <div className="border-4 border-teal-500 p-1">
-            <img src="/assets/team3.jpg" className="w-40 h-40 object-cover" />
-          </div>
-          <h3 className="text-lg font-semibold text-teal-600 mt-4">Mary Smith</h3>
-          <p className="font-bold text-gray-900">Marketing Director</p>
-          <p className="text-sm mt-2 text-gray-600 w-48">
-            This slide is 100% editable. Adapt it to your needs and capture your audience's attention.
-          </p>
-        </div>
-
-        {/* Card 4 (DOWN) */}
-        <div className="flex flex-col items-center mt-6">
-          <div className="border-4 border-purple-500 p-1">
-            <img src="/assets/team4.jpg" className="w-40 h-40 object-cover" />
-          </div>
-          <h3 className="text-lg font-semibold text-purple-600 mt-4">John Doe</h3>
-          <p className="font-bold text-gray-900">Digital Marketing Manager</p>
-          <p className="text-sm mt-2 text-gray-600 w-48">
-            This slide is 100% editable. Adapt it to your needs and capture your audience's attention.
-          </p>
-        </div>
-
-        {/* Card 5 (UP) */}
-        <div className="flex flex-col items-center -mt-6">
-          <div className="border-4 border-teal-500 p-1">
-            <img src="/assets/team5.jpg" className="w-40 h-40 object-cover" />
-          </div>
-          <h3 className="text-lg font-semibold text-teal-600 mt-4">Carol Smith</h3>
-          <p className="font-bold text-gray-900">Sales Manager</p>
-          <p className="text-sm mt-2 text-gray-600 w-48">
-            This slide is 100% editable. Adapt it to your needs and capture your audience's attention.
-          </p>
-        </div>
-
+    {/* Card 2 (DOWN) */}
+    <div className="flex flex-col items-center mt-6">
+      <div className="border-4 border-purple-500 p-1">
+        <img src="https://akm-img-a-in.tosshub.com/lingo/hrb/images/story/202308/untitled_design_-_2023-08-02t222135.274-sixteen_nine.png" className="w-40 h-40 object-cover" />
       </div>
-    </section>
+      <h3 className="text-lg font-semibold text-purple-600 mt-4">Pratiksha Rout</h3>
+      <p className="font-bold text-gray-900">Head Bartender</p>
+      <p className="text-sm mt-2 text-gray-600 w-48">
+        Specializes in signature cocktails and delivering an exceptional bar experience.
+      </p>
+    </div>
+
+    {/* Card 3 (UP) */}
+    <div className="flex flex-col items-center -mt-6">
+      <div className="border-4 border-teal-500 p-1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRScA6VN-BZgpAHAPtIsyOoMKUTS9wNt8elnw&s" className="w-40 h-40 object-cover" />
+      </div>
+      <h3 className="text-lg font-semibold text-teal-600 mt-4">Debasish Behera</h3>
+      <p className="font-bold text-gray-900">Executive Chef</p>
+      <p className="text-sm mt-2 text-gray-600 w-48">
+        Crafting delicious dishes that perfectly complement your drinks and mood.
+      </p>
+    </div>
+
+    {/* Card 4 (DOWN) */}
+    <div className="flex flex-col items-center mt-6">
+      <div className="border-4 border-purple-500 p-1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSppJrf_Bree9_GelRTnmsqB_HWwPGy0D-TEQ&s" className="w-40 h-40 object-cover" />
+      </div>
+      <h3 className="text-lg font-semibold text-purple-600 mt-4">Sneha Patnaik</h3>
+      <p className="font-bold text-gray-900">DJ & Music Curator</p>
+      <p className="text-sm mt-2 text-gray-600 w-48">
+        Bringing the perfect beats to keep the vibe energetic throughout the night.
+      </p>
+    </div>
+
+    {/* Card 5 (UP) */}
+    <div className="flex flex-col items-center -mt-6">
+      <div className="border-4 border-teal-500 p-1">
+        <img src="https://img.freepik.com/premium-photo/smiling-waiter-ready-serve-cocktail_1158146-29612.jpg?semt=ais_hybrid&w=740&q=80" className="w-40 h-40 object-cover" />
+      </div>
+      <h3 className="text-lg font-semibold text-teal-600 mt-4">Amit Kumar Das</h3>
+      <p className="font-bold text-gray-900">Senior Waiter</p>
+      <p className="text-sm mt-2 text-gray-600 w-48">
+        Always ready with a smile, ensuring every guest feels welcomed and cared for.
+      </p>
+    </div>
+
+  </div>
+</section>
+
 
       
       {/* CTA */}

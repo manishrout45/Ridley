@@ -4,35 +4,38 @@ import { FaStar, FaArrowLeft, FaArrowRight } from "react-icons/fa";
 const testimonials = [
   {
     name: "MJ Patil",
-    role: "Teacher, Alampur",
-    image: "https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg?semt=ais_hybrid&w=740&q=80",
+    role: "Regular Guest",
+    image:
+      "https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg?semt=ais_hybrid&w=740&q=80",
     text:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "The ambiance here is unmatched! Great music, friendly staff, and perfectly crafted drinks. It’s my go-to place to relax after work.",
   },
   {
     name: "Karan Sharma",
-    role: "HR Manager",
-    image: "https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg?semt=ais_hybrid&w=740&q=80",
+    role: "Corporate Team Outing Organizer",
+    image:
+      "https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg?semt=ais_hybrid&w=740&q=80",
     text:
-      "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Aute irure dolor in reprehenderit.",
+      "We booked the pub for a team gathering — the service was excellent, the food was amazing, and everyone loved the signature cocktails!",
   },
   {
     name: "Sandeep Kumar",
-    role: "Project Supervisor",
+    role: "Event Host",
     image:
       "https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg?semt=ais_hybrid&w=740&q=80",
     text:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "Hosted a birthday celebration here, and it was fantastic. The staff handled everything smoothly and the vibe was perfect for the night.",
   },
   {
     name: "Sunita Kumari",
-    role: "Product Designer",
+    role: "Food & Beverage Reviewer",
     image:
       "https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg?semt=ais_hybrid&w=740&q=80",
     text:
-      "Excepteur sint occaecat cupidatat non proident. Sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Their snacks and cocktails are top-notch. The flavors are rich and the presentation is impressive. Highly recommended for a great evening!",
   },
 ];
+
 
 const Testimonial = () => {
   const [active, setActive] = useState(0);
@@ -79,30 +82,51 @@ const Testimonial = () => {
           </button>
 
           {/* CARD */}
-          <div
-            className="
-              bg-white/10 backdrop-blur-xl 
-              p-10 rounded-3xl shadow-xl 
-              border border-white/20 
-              transition-all duration-700 ease-in-out 
-              w-full
-            "
-          >
-            <p className="text-lg text-green/90 leading-relaxed mb-6 min-h-[120px]">
-              {testimonials[active].text}
-            </p>
+<div
+  className="
+    relative w-full p-10 rounded-3xl 
+    bg-white/20 backdrop-blur-2xl
+    shadow-[0_10px_40px_rgba(0,0,0,0.15)]
+    border border-white/30
+    transition-all duration-700
+    hover:shadow-[0_15px_50px_rgba(0,0,0,0.2)]
+    hover:scale-[1.02]
+    overflow-hidden
+  "
+>
 
-            <div className="flex justify-center gap-1 mb-3">
-              {[...Array(5)].map((_, i) => (
-                <FaStar key={i} className="text-yellow-300" />
-              ))}
-            </div>
+  {/* Gradient Glow Border */}
+  <div className="absolute inset-0 rounded-3xl p-[2px] bg-green-900 opacity-90"></div>
 
-            <p className="text-xl font-semibold text-green-700">
-              — {testimonials[active].name}
-            </p>
-            <p className="text-sm text-green/80">{testimonials[active].role}</p>
-          </div>
+  {/* Inner Content */}
+  <div className="relative bg-white/90 rounded-2xl p-6">
+    
+    {/* Quote Symbol */}
+    <div className="text-7xl text-green-500/70 font-bold mb-0">“</div>
+
+    {/* Testimonial Text */}
+    <p className="text-lg text-green-900/90 leading-relaxed  min-h-[100px] font-medium">
+      {testimonials[active].text}
+    </p>
+
+    {/* Stars */}
+    <div className="flex justify-center gap-1 my-4">
+      {[...Array(5)].map((_, i) => (
+        <FaStar key={i} className="text-yellow-400 drop-shadow-md" />
+      ))}
+    </div>
+
+    {/* Name + Role */}
+    <div className="mt-4">
+      <p className="text-xl font-semibold text-green-700 tracking-wide">
+        — {testimonials[active].name}
+      </p>
+      <p className="text-sm text-green-800/70">{testimonials[active].role}</p>
+    </div>
+
+  </div>
+</div>
+
 
           {/* RIGHT ARROW */}
           <button
@@ -122,7 +146,7 @@ const Testimonial = () => {
         </div>
 
         {/* AVATARS */}
-        <div className="flex justify-center gap-6 mt-10">
+        <div className="flex justify-center gap-6 -mt-8">
           {testimonials.map((item, i) => (
             <div
               key={i}

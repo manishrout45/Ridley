@@ -73,13 +73,13 @@ const AboutSection = ({ className = "" }) => {
       />
 
       <img
-        src="/assets/images/restaurant-interior.jpg"
+        src="/assets/images/OrgImg/Ridley_Img2.jpeg"
         className="rounded-xl shadow-md w-full h-44 sm:h-52 lg:h-56 object-cover"
         alt="Interior"
       />
 
       <img
-        src="/assets/images/restaurant-interior(1).jpg"
+        src="/assets/images/OrgImg/Ridley_Img1.jpeg"
         className="rounded-xl shadow-md w-full h-44 sm:h-52 lg:h-56 object-cover"
         alt="Interior 2"
       />

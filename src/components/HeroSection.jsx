@@ -11,7 +11,7 @@ const slides = [
   },
   {
     type: "image",
-    src: "/assets/images/Ridley03.jpeg",
+    src: "/assets/images/OrgImg/Ridley_Img3.jpeg",
     subheading: "Live Music Every Weekend",
     heading: "Dance & Chill\nAll Night Long",
     description:
@@ -19,7 +19,7 @@ const slides = [
   },
   {
     type: "video",
-    src: "/assets/videos/1112500_Cocktail_Gen_z_1920x1080.mp4",
+    src: "/assets/videos/Ridley_Commingsoon.mp4",
     subheading: "Premium Pub & Nightlife Experience",
     heading: "Where Good Drinks\nMeet Great Company",
     description:
