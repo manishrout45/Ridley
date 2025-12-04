@@ -61,7 +61,7 @@ export default function HeroVideoSection() {
           {/* Logo */}
           <div className="relative w-42 h-42 md:h-44 md:w-44 bg-white rounded-full shadow-xl flex items-center justify-center">
             <img
-              src="/assets/images/logo/Ridleypub Logo PNG-01.png.png"
+              src="/assets/images/logo/Ridleypub Logo PNG-01.png"
               alt="Logo"
               className="w-20 md:w-24"
             />

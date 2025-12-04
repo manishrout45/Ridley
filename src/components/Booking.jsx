@@ -114,7 +114,7 @@ const handleSubmit = async (e) => {
                 <option>4 Kids</option>
               </select>
 
-              <button type="submit" disabled={loading} className="bg-red-700 hover:bg-red-800 text-white font-semibold py-3 rounded-md md:col-span-2 mt-2">
+              <button type="submit" disabled={loading} className="shine-btn bg-red-700 hover:bg-red-800 text-white font-semibold py-3 rounded-md md:col-span-2 mt-2">
                 {loading ? "Submitting..." : "RESERVE YOUR TABLE NOW"}
               </button>
 
