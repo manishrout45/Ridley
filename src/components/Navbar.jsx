@@ -33,23 +33,33 @@ const Navbar = () => {
       `}
     >
       {/* Top Contact Bar */}
-<div className="w-full">
-  <div className="bg-black bg-opacity-0 text-white text-sm max-w-7xl mx-auto px-4 pt-2 flex justify-end items-center space-x-6">
+        <div className="w-full">
+          <div className="bg-black bg-opacity-0 text-white text-sm max-w-7xl mx-auto px-4 pt-2 flex justify-end items-center space-x-6">
 
-    <div className="flex items-center space-x-4">
-      <span className="flex items-center space-x-2">
-        <i className="fa-solid fa-phone"></i>
-        <span>+91 9777 220 660</span>
-      </span>
+            <div className="flex items-center space-x-4">
+              {/* Phone */}
+        <a
+          href="tel:+919777220660"
+          className="flex items-center space-x-2 hover:text-green-500 transition-colors duration-300"
+        >
+          <i className="fa-solid fa-phone"></i>
+          <span>+91 9777 220 660</span>
+        </a>
 
-      <span className="hidden md:flex items-center space-x-2">
-        <i className="fa-solid fa-envelope"></i>
-        <span>info@ridleypubbbsr.com  </span>
-      </span>
-       <span className="hidden md:flex items-center space-x-2">
-        
-        <span>| </span>
-      </span>
+        {/* Email */}
+        <a
+          href="mailto:info@ridleypubbbsr.com"
+          className="hidden md:flex items-center space-x-2 hover:text-green-500 transition-colors duration-300"
+        >
+          <i className="fa-solid fa-envelope"></i>
+          <span>info@ridleypubbbsr.com</span>
+        </a>
+
+        {/* Divider */}
+        <span className="hidden md:flex items-center space-x-2 text-white">
+          <span>|</span>
+        </span>
+
 
       <a href="#" className="hover:text-green-400">
         <i className="fa-brands fa-facebook-f"></i>
