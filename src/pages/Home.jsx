@@ -276,7 +276,7 @@ const Home = () => {
     <div className="grid grid-cols-2 gap-4">
       <img src="/assets/images/OrgImg/Ridley_Img1.jpeg" alt="" className="rounded-md object-cover w-full h-48" />
       <img src="/assets/images/OrgImg/Ridley_Img2.jpeg" alt="" className="rounded-md object-cover w-full h-48" />
-      <img src="/assets/images/shish-kebab-with-colorful-bell-peppers-served-with-ketchup-fresh-vegetables.jpg" alt="" className="rounded-md object-cover w-full h-48" />
+      <img src="/assets/images/OrgImg/Ridley_Img4.jpeg" alt="" className="rounded-md object-cover w-full h-48" />
       <img src="/assets/images/OrgImg/Ridley_Img3.jpeg" alt="" className="rounded-md object-cover w-full h-48" />
     </div>
 

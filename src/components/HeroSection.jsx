@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 const slides = [
   {
     type: "image",
-    src: "/assets/images/img2.jpg",
+    src: "/assets/images/OrgImg/Ridley_Img3.jpeg",
     subheading: "Experience the Vibe",
     heading: "Cheers & Memories\nTogether",
     description:
@@ -11,7 +11,7 @@ const slides = [
   },
   {
     type: "image",
-    src: "/assets/images/OrgImg/Ridley_Img3.jpeg",
+    src: "/assets/images/OrgImg/Ridley_Img2.jpeg",
     subheading: "Live Music Every Weekend",
     heading: "Dance & Chill\nAll Night Long",
     description:

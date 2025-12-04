@@ -22,7 +22,7 @@ const Discover = ({ className = "" }) => {
           {/* Card 1 */}
           <div className="text-center card-hover transition-all duration-700">
             <img
-              src="/assets/images/OriginalDrinks.jpeg"
+              src="/assets/images/OrgImg/Ridley_Img2.jpeg"
               alt="Original Drinks"
               className="w-full h-80 object-cover shadow-md"
             />
@@ -34,7 +34,7 @@ const Discover = ({ className = "" }) => {
           {/* Card 2 */}
           <div className="text-center card-hover transition-all duration-700">
             <img
-              src="/assets/images/shish-kebab-with-colorful-bell-peppers-served-with-ketchup-fresh-vegetables.jpg"
+              src="/assets/images/OrgImg/Ridley_Img3.jpeg"
               alt="Delicious Food"
               className="w-full h-80 object-cover shadow-md"
             />
@@ -46,7 +46,7 @@ const Discover = ({ className = "" }) => {
           {/* Card 3 */}
           <div className="text-center card-hover transition-all duration-700">
             <img
-              src="/assets/images/nightlife-people-having-fun-bars-clubs.jpg"
+              src="/assets/images/OrgImg/Ridley_Img1.jpeg"
               alt="Great Atmosphere"
               className="w-full h-80 object-cover shadow-md"
             />

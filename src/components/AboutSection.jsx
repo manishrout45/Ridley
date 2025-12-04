@@ -37,28 +37,7 @@ const AboutSection = ({ className = "" }) => {
 
      
 
-      {/* Stats */}
-      <div className="flex items-center gap-12 mb-10">
-        <div>
-          <p className="text-5xl font-bold text-green-500">15</p>
-          <p className="text-white font-medium">
-            Years of<br />
-            <span className="font-bold">EXPERIENCE</span>
-          </p>
-        </div>
-
-        <div className="border-l-2 border-green-500 h-14"></div>
-
-        <div>
-          <p className="text-5xl font-bold text-green-500">8</p>
-          <p className="text-white font-medium">
-            Popular<br />
-            <span className="font-bold">MASTER CHEFS</span>
-          </p>
-        </div>
-      </div>
-
-      <button className="shine-btn bg-green-500 text-white px-8 py-3 rounded-md shadow hover:bg-green-600">
+      <button className="shine-btn bg-green-500 text-white px-8 py-3 mt-8 rounded-md shadow hover:bg-green-600">
         READ MORE
       </button>
     </div>

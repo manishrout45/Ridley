@@ -33,42 +33,45 @@ const Navbar = () => {
       `}
     >
       {/* Top Contact Bar */}
-      <div className="w-full">
-        <div className="bg-black bg-opacity-0 text-white text-sm max-w-7xl mx-auto px-4 py-2 flex justify-between items-center">
+<div className="w-full">
+  <div className="bg-black bg-opacity-0 text-white text-sm max-w-7xl mx-auto px-4 pt-2 flex justify-end items-center space-x-6">
 
-          <div className="flex items-center space-x-6">
-            <span className="flex items-center space-x-2">
-              <i className="fa-solid fa-phone"></i>
-              <span>+91 9876543210</span>
-            </span>
+    <div className="flex items-center space-x-4">
+      <span className="flex items-center space-x-2">
+        <i className="fa-solid fa-phone"></i>
+        <span>+91 9876543210</span>
+      </span>
 
-            <span className="hidden md:flex items-center space-x-2">
-              <i className="fa-solid fa-envelope"></i>
-              <span>info@example.com</span>
-            </span>
-          </div>
+      <span className="hidden md:flex items-center space-x-2">
+        <i className="fa-solid fa-envelope"></i>
+        <span>info@example.com  </span>
+      </span>
+       <span className="hidden md:flex items-center space-x-2">
+        
+        <span>| </span>
+      </span>
 
-          <div className="flex items-center space-x-4">
-            <a href="#" className="hover:text-green-400">
-              <i className="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="#" className="hover:text-green-400">
-              <i className="fa-brands fa-instagram"></i>
-            </a>
-            <a href="#" className="hover:text-green-400">
-              <i className="fa-brands fa-twitter"></i>
-            </a>
-          </div>
+      <a href="#" className="hover:text-green-400">
+        <i className="fa-brands fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/ridleypubbbsr/" className="hover:text-green-400">
+        <i className="fa-brands fa-instagram"></i>
+      </a>
+      <a href="#" className="hover:text-green-400">
+        <i className="fa-brands fa-twitter"></i>
+      </a>
+    </div>
 
-        </div>
-      </div>
+  </div>
+</div>
+
 
       {/* Main Navbar */}
-      <div className="container mx-auto px-4 py-2 flex justify-between items-center">
+      <div className="container mx-auto px-4 pb-2 flex justify-between items-center">
         {/* LOGO */}
         <Link to="/" className="flex items-center">
           <img
-            src="/assets/images/logo/TurtleMascotPNG-01.png"
+            src="/assets/images/logo/Ridleypub Logo PNG-02.png"
             alt="Ridley Logo"
             className="h-24 sm:h-18 w-auto object-contain"
           />

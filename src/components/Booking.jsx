@@ -68,17 +68,21 @@ const handleSubmit = async (e) => {
           <img src="/assets/images/OrgImg/Ridley_Img3.jpeg" alt="Dining Area" className="rounded-xl shadow-lg w-full h-64 sm:h-80 md:h-full object-cover bounce-hover" />
 
           <div className="bg-white rounded-xl shadow-lg p-6 sm:p-10 md:p-6">
-            <div className="flex flex-col sm:flex-row items-center justify-between mb-6 border-b pb-4 gap-4 text-sm">
-              <div className="text-center sm:text-left">
-                <p className="text-gray-500">CALL US</p>
-                <p className="text-green-600 font-semibold">+123 456 789 00</p>
-              </div>
-              <div className="hidden sm:block text-gray-400 font-semibold">OR</div>
-              <div className="text-center sm:text-right">
-                <p className="text-gray-500">EMAIL US</p>
-                <p className="text-green-600 font-semibold">INFO@RIDLEY.COM</p>
-              </div>
-            </div>
+            <div className="flex flex-col items-center justify-center mb-6 border-b pb-4 gap-3 text-sm">
+
+  <div className="text-center">
+    <p className="text-gray-500">CALL US</p>
+    <p className="text-green-600 font-semibold">+91 9777 220 660</p>
+  </div>
+
+  {/* OR + Book Now as heading */}
+  <div className="flex items-center gap-2 text-gray-600 font-semibold">
+    <span>OR</span>
+  
+  </div>
+
+</div>
+
 
             <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="*Full Name" required className="border p-3 rounded-md w-full text-gray-700" />
