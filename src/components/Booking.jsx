@@ -61,7 +61,7 @@ const handleSubmit = async (e) => {
       <div className="relative z-10 w-full max-w-6xl flex flex-col items-center">
         <h3 className="text-green-300 text-sm mb-2 text-center tracking-widest">BOOK YOUR TABLE</h3>
         <h2 className="text-white text-3xl sm:text-4xl font-bold mb-6 text-center leading-snug">
-          GROUSE DINNER AT FRENCH<br />RESTAURANT
+          Unlimited Fun Under One Roof <br />Pure Pub Energy Awaits
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">

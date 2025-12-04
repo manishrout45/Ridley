@@ -46,7 +46,7 @@ const AboutSection = ({ className = "" }) => {
     <div className="relative grid grid-cols-1 sm:grid-cols-2 gap-6 p-6">
 
       <img
-        src="/assets/images/nightlife-people-having-fun-bars-clubs.jpg"
+        src="/assets/images/Ridley04.jpeg"
         className="rounded-xl shadow-md w-full h-48 sm:h-56 lg:h-64 object-cover"
         alt="Nightlife"
       />
@@ -64,7 +64,7 @@ const AboutSection = ({ className = "" }) => {
       />
 
       <img
-        src="/assets/images/shish-kebab-with-colorful-bell-peppers-served-with-ketchup-fresh-vegetables.jpg"
+        src="/assets/images/Ridley04.jpeg"
         className="rounded-xl shadow-md w-full h-48 sm:h-56 lg:h-64 object-cover"
         alt="Food"
       />

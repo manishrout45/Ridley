@@ -305,7 +305,7 @@ The restaurant is also available for breakfast and can be hired exclusively for 
 
 
 <Booking />
-<Testimonial />
+
 
     </>
   );

@@ -39,11 +39,13 @@ const GallerySection = ({ className = "" }) => {
         {/* ITEM TEMPLATE */}
         {[
           { img: "/assets/images/OrgImg/Ridley_Img2.jpeg", title: "STRONG ALCOHOL" },
-          { img: "/assets/images/nightlife-people-having-fun-bars-clubs.jpg", title: "CONCERT LIVE" },
           { img: "/assets/images/OrgImg/Ridley_Img3.jpeg", title: "GREAT ATMOSPHERE" },
           { img: "/assets/images/shish-kebab-with-colorful-bell-peppers-served-with-ketchup-fresh-vegetables.jpg", title: "DELICIOUS FOOD" },
-          { img: "/assets/images/nightlife-people-having-fun-bars-clubs.jpg", title: "FRIENDS & FUN" },
-          { img: "https://img.freepik.com/free-photo/chef-cooking-kitchen-while-wearing-professional-attire_23-2151208316.jpg?semt=ais_hybrid&w=740&q=80", title: "MASTER CHEF" },
+          { img: "/assets/images/OrgImg/Ridley_Img1.jpeg", title: "NIGHT PARTY" },
+          { img: "/assets/images/OrgImg/Ridley_Img4.jpeg", title: "SIGNATURE COCKTAILS" },
+          { img: "/assets/images/OrgImg/Ridley_Img2.jpeg", title: "STRONG ALCOHOL" },
+          { img: "/assets/images/OrgImg/Ridley_Img3.jpeg", title: "GREAT ATMOSPHERE" },
+          { img: "/assets/images/shish-kebab-with-colorful-bell-peppers-served-with-ketchup-fresh-vegetables.jpg", title: "DELICIOUS FOOD" },
           { img: "/assets/images/OrgImg/Ridley_Img1.jpeg", title: "NIGHT PARTY" },
           { img: "/assets/images/OrgImg/Ridley_Img4.jpeg", title: "SIGNATURE COCKTAILS" },
         ].map((item, index) => (

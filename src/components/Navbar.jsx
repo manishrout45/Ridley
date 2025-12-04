@@ -39,12 +39,12 @@ const Navbar = () => {
     <div className="flex items-center space-x-4">
       <span className="flex items-center space-x-2">
         <i className="fa-solid fa-phone"></i>
-        <span>+91 9876543210</span>
+        <span>+91 9777 220 660</span>
       </span>
 
       <span className="hidden md:flex items-center space-x-2">
         <i className="fa-solid fa-envelope"></i>
-        <span>info@example.com  </span>
+        <span>info@ridleypubbbsr.com  </span>
       </span>
        <span className="hidden md:flex items-center space-x-2">
         

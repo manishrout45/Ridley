@@ -18,13 +18,13 @@ const Footer = () => {
           {/* Phone */}
           <p className="mt-3 text-sm opacity-90 hover:text-green-300 transition flex items-center gap-2">
             <i className="fa-solid fa-phone text-green-400"></i>
-            +2 392 3929 210
+            +91 9777 220 660
           </p>
 
           {/* Email */}
           <p className="mt-2 text-sm opacity-90 hover:text-green-300 transition flex items-center gap-2">
             <i className="fa-solid fa-envelope text-green-400"></i>
-            info@yourdomain.com
+            info@ridleypubbbsr.com
           </p>
 
           {/* Social Media Icons */}
@@ -104,12 +104,12 @@ const Footer = () => {
           </h2>
 
           <div className="grid grid-cols-3 gap-2">
-            <img src="/assets/images/nightlife-people-having-fun-bars-clubs.jpg" className="w-full h-20 object-cover rounded" alt="" />
+            <img src="/assets/images/Ridley04.jpeg" className="w-full h-20 object-cover rounded" alt="" />
             <img src="/assets/images/OrgImg/Ridley_Img3.jpeg" className="w-full h-20 object-cover rounded" alt="" />
             <img src="/assets/images/OrgImg/Ridley_Img2.jpeg" className="w-full h-20 object-cover rounded" alt="" />
-            <img src="/assets/images/shish-kebab-with-colorful-bell-peppers-served-with-ketchup-fresh-vegetables.jpg" className="w-full h-20 object-cover rounded" alt="" />
-            <img src="/assets/images/OrgImg/Ridley_Img4.jpeg" className="w-full h-20 object-cover rounded" alt="" />
             <img src="/assets/images/OrgImg/Ridley_Img1.jpeg" className="w-full h-20 object-cover rounded" alt="" />
+            <img src="/assets/images/OrgImg/Ridley_Img4.jpeg" className="w-full h-20 object-cover rounded" alt="" />
+            <img src="/assets/images/Ridley04.jpeg" className="w-full h-20 object-cover rounded" alt="" />
           </div>
         </div>
       </div>
