@@ -2,7 +2,7 @@ import React from "react";
 const services = [
   {
     icon: "fa-cocktail",
-    color: "teal-600",
+    color: "green-600",
     title: "Signature Cocktails",
     desc: "Enjoy our handcrafted cocktails made by expert bartenders with premium ingredients."
   },
@@ -14,7 +14,7 @@ const services = [
   },
   {
     icon: "fa-utensils",
-    color: "teal-600",
+    color: "green-600",
     title: "Delicious Food",
     desc: "Taste our chef’s special menu—from starters to full meals crafted to perfection."
   },
@@ -32,7 +32,7 @@ const About = () => {
       {/* HERO SECTION */}
       <section
         className="relative w-full min-h-[70vh] bg-cover bg-center flex items-center justify-center px-6"
-        style={{ backgroundImage: "url('/assets/images/img1.jpeg')" }}
+        style={{ backgroundImage: "url('/assets/images/OrgImg/DSC_0471.JPG')" }}
       >
         <div className="absolute inset-0 bg-black/70"></div>
 
@@ -41,7 +41,7 @@ const About = () => {
             ABOUT OUR PUB & EXPERIENCE
           </h3>
 
-          <h1 className="main-heading text-4xl md:text-6xl font-extrabold leading-tight mb-6 text-white">
+          <h1 className="main-heading text-4xl md:text-6xl font-poppins leading-tight mb-6 text-white">
             A Place Where Nights Come Alive
           </h1>
 
@@ -57,7 +57,7 @@ const About = () => {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left Image */}
           <img
-            src="/assets/images/img2.jpg"
+            src="/assets/images/OrgImg/DSC_0673.JPG"
             className="w-full rounded-xl shadow-lg object-cover"
             alt="About Pub"
           />
@@ -68,7 +68,7 @@ const About = () => {
               OUR STORY
             </h3>
 
-            <h2 className="main-heading text-3xl md:text-4xl font-bold mb-6 leading-snug">
+            <h2 className="main-heading text-3xl md:text-4xl font-poppins mb-6 leading-snug">
               The Perfect Blend of Drinks, Music & Atmosphere
             </h2>
 
@@ -98,15 +98,15 @@ const About = () => {
   {/* Background Section */}
   <div className="relative w-full h-[340px] md:h-[380px]">
     <img
-      src="/assets/images/Ridley03.jpeg"
+      src="/assets/images/OrgImg/DSC_0465.JPG"
       alt="Services"
       className="w-full h-full object-cover"
     />
-    <div className="absolute inset-0 bg-teal-700/70"></div>
+    <div className="absolute inset-0 bg-green-900/70"></div>
 
     {/* Heading */}
     <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-      <h2 className="text-4xl md:text-5xl font-bold text-white">
+      <h2 className="text-4xl md:text-5xl font-poppins main-heading text-white">
         Our Services
       </h2>
       <p className="text-white text-lg mt-3 max-w-2xl">
@@ -134,13 +134,13 @@ const About = () => {
             w-24 h-24 rounded-full bg-white border-4 shadow-xl flex items-center justify-center
             border-${item.color}
             transition-all duration-300
-            group-hover:border-teal-500 group-hover:scale-110
+            group-hover:border-green-500 group-hover:scale-110
           `}
         >
           <i
             className={`
               fas ${item.icon} text-3xl text-${item.color}
-              transition-all duration-300 group-hover:text-teal-500
+              transition-all duration-300 group-hover:text-green-500
             `}
           ></i>
         </div>
@@ -149,7 +149,7 @@ const About = () => {
         <h3
           className={`
             text-xl font-bold text-${item.color} mt-2
-            transition-colors duration-300 group-hover:text-teal-500
+            transition-colors duration-300 group-hover:text-green-500
           `}
         >
           {item.title}
@@ -181,7 +181,7 @@ const About = () => {
 
     {/* Card 1 (UP) */}
     <div className="flex flex-col items-center -mt-6">
-      <div className="border-4 border-teal-500 p-1">
+      <div className="border-4 border-green-500 p-1">
         <img src="https://www.caterermiddleeast.com/cloud/2025/08/13/Jeet-Verma-Beverage-Manager-1-1024x768.jpg" className="w-40 h-40 object-cover" />
       </div>
       <h3 className="text-lg font-semibold text-teal-600 mt-4">Suman Mishra</h3>
@@ -246,7 +246,7 @@ const About = () => {
       
       {/* CTA */}
       <section className="py-16 bg-gray-200 text-gray-900 text-center">
-        <h2 className="main-heading text-3xl md:text-4xl font-bold mb-4">
+        <h2 className="main-heading text-3xl md:text-4xl font-poppins mb-4">
           Ready for an Amazing Night?
         </h2>
         <p className="text-black/90 mb-8 text-lg max-w-2xl mx-auto">

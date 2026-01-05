@@ -5,7 +5,6 @@ import GallerySection from "../components/GallerySection";
 import HeroSection from "../components/HeroSection";
 import HeroVideoSection from "../components/HeroVideoSection";
 import ScrollPromo from "../components/ScrollPromo";
-import Testimonial from "../components/Testimonial";
 import useScrollFade from "../hooks/useScrollFade";
 
 const Home = () => {
@@ -22,7 +21,7 @@ const Home = () => {
 
     {/* Title */}
     <div className="text-center mb-14">
-      <h2 className="text-gray-900 text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-[1px] leading-snug">
+      <h2 className="text-gray-900 text-2xl sm:text-3xl md:text-4xl font-poppins main-heading tracking-[1px] leading-snug">
         TIMELESS AMBIANCE,
         <br />
         <span className="text-green-700">UNFORGETTABLE MOMENTS</span>
@@ -41,7 +40,7 @@ const Home = () => {
       {/* Left Image */}
       <div className="rounded-2xl overflow-hidden shadow-xl h-full flex transform transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl">
         <img
-          src="/assets/images/OrgImg/Ridley_Img3.jpeg"
+          src="/assets/images/OrgImg/DSC_0702.JPG"
           className="w-full h-52 md:h-full object-cover transition-all duration-700 hover:scale-110"
         />
       </div>
@@ -54,7 +53,7 @@ const Home = () => {
         text-xl 
         md:text-2xl 
         lg:text-4xl          /* BIG SIZE ONLY ON DESKTOP */
-        font-extrabold text-gray-900 mb-3 leading-snug
+        font-poppins main-heading text-gray-900 mb-3 leading-snug
       ">
     EXPERIENCE THE  
     <span className="text-green-700"> NEXT ERA </span>
@@ -68,7 +67,7 @@ const Home = () => {
         lg:text-lg           /* Bigger on desktop */
         leading-relaxed
       ">
-    Crafted with premium ingredients and refined techniques.
+    Crafted with premium ingredients and refined techniques, setting a new standard in quality and excellence.
   </p>
 
 <button
@@ -89,7 +88,7 @@ const Home = () => {
       {/* Right Card */}
       <div className="rounded-2xl overflow-hidden bg-white shadow-xl h-full flex flex-col transform transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl">
         <img
-          src="/assets/images/RidleyImg/RidleyIMG-04.jpeg"
+          src="/assets/images/OrgImg/DSC_0429.JPG"
           className="w-full h-44 md:h-full object-cover transition-all duration-700 hover:scale-110"
         />
         <div className="p-4">
@@ -124,7 +123,7 @@ const Home = () => {
 
         <div className="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden shadow-md mx-auto mb-4 ring-2 ring-green-100">
           <img
-            src="/assets/images/OrgImg/Ridley_Img4.jpeg"
+            src="/assets/images/OrgImg/DSC_0577.JPG"
             className="w-full h-full object-cover"
           />
         </div>
@@ -267,22 +266,22 @@ const Home = () => {
     <HeroVideoSection className="zoom-in" />
 
       {/* Private Dining Section */}
-<section className="fade-left py-16 px-6 bg-white">
+<section className="fade-left py-16 px-4 bg-white">
   
   {/* Content Wrapper (max-width applied here) */}
-  <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+  <div className="max-w-7xl mx-auto  grid md:grid-cols-2 gap-12 items-center">
 
     {/* Left: Image Grid */}
     <div className="grid grid-cols-2 gap-4">
-      <img src="/assets/images/OrgImg/Ridley_Img1.jpeg" alt="" className="rounded-md object-cover w-full h-48" />
-      <img src="/assets/images/OrgImg/Ridley_Img2.jpeg" alt="" className="rounded-md object-cover w-full h-48" />
-      <img src="/assets/images/OrgImg/Ridley_Img4.jpeg" alt="" className="rounded-md object-cover w-full h-48" />
       <img src="/assets/images/OrgImg/Ridley_Img3.jpeg" alt="" className="rounded-md object-cover w-full h-48" />
+      <img src="/assets/images/OrgImg/DSC_0634.JPG" alt="" className="rounded-md object-cover w-full h-48" />
+      <img src="/assets/images/OrgImg/Ridley_Img4.jpeg" alt="" className="rounded-md object-cover w-full h-48" />
+      <img src="/assets/images/OrgImg/DSC_0597.JPG" alt="" className="rounded-md object-cover w-full h-48" />
     </div>
 
     {/* Right: Text */}
     <div className="text-center md:text-left">
-      <h2 className="text-3xl font-serif font-bold mb-6 text-gray-800">
+      <h2 className="text-3xl font-serif font-poppins main-heading mb-6 text-gray-800">
         Private dining<br />& events
       </h2>
 
@@ -302,7 +301,6 @@ The restaurant is also available for breakfast and can be hired exclusively for 
 
   </div>
 </section>
-
 
 <Booking />
 

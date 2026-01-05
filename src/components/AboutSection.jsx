@@ -24,7 +24,7 @@ const AboutSection = ({ className = "" }) => {
         <span className="h-[2px] w-14 bg-green-500 inline-block"></span>
       </p>
 
-      <h2 className="main-heading text-4xl md:text-5xl font-bold text-white mb-6 flex items-center gap-4">
+      <h2 className="main-heading text-4xl md:text-5xl font-poppins text-white mb-6 flex items-center gap-4">
         Welcome to Ridley
         <FaMartiniGlassCitrus className="text-6xl text-white" />
       </h2>
@@ -58,14 +58,14 @@ const AboutSection = ({ className = "" }) => {
       />
 
       <img
-        src="/assets/images/OrgImg/Ridley_Img1.jpeg"
+        src="/assets/images/OrgImg/Ridley_Img3.jpeg"
         className="rounded-xl shadow-md w-full h-44 sm:h-52 lg:h-56 object-cover"
         alt="Interior 2"
       />
 
       <img
-        src="/assets/images/Ridley04.jpeg"
-        className="rounded-xl shadow-md w-full h-48 sm:h-56 lg:h-64 object-cover"
+        src="/assets/images/OrgImg/DSC_0762.JPG"
+        className="rounded-xl shadow-md w-full h-48 sm:h-56 lg:h-64 object-cover md:-mt-8" 
         alt="Food"
       />
 

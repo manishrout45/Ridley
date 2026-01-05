@@ -4,7 +4,7 @@ const Discover = ({ className = "" }) => {
       <div className={`max-w-5xl mx-auto text-center ${className}`}>
 
         {/* Heading */}
-        <h2 className="text-4xl font-bold text-gray-800">Discover</h2>
+        <h2 className="text-4xl font-poppins main-heading text-gray-800">Discover</h2>
         <p className="text-sm tracking-[4px] font-semibold text-gray-600 mt-2">
           TRADITION & QUALITY
         </p>
@@ -22,7 +22,7 @@ const Discover = ({ className = "" }) => {
           {/* Card 1 */}
           <div className="text-center card-hover transition-all duration-700">
             <img
-              src="/assets/images/OrgImg/Ridley_Img2.jpeg"
+              src="/assets/images/OrgImg/Ridley_Img3.jpeg"
               alt="Original Drinks"
               className="w-full h-80 object-cover shadow-md"
             />
@@ -34,7 +34,7 @@ const Discover = ({ className = "" }) => {
           {/* Card 2 */}
           <div className="text-center card-hover transition-all duration-700">
             <img
-              src="/assets/images/OrgImg/Ridley_Img3.jpeg"
+              src="/assets/images/OrgImg/DSC_0634.JPG"
               alt="Delicious Food"
               className="w-full h-80 object-cover shadow-md"
             />
@@ -46,7 +46,7 @@ const Discover = ({ className = "" }) => {
           {/* Card 3 */}
           <div className="text-center card-hover transition-all duration-700">
             <img
-              src="/assets/images/OrgImg/Ridley_Img1.jpeg"
+              src="/assets/images/OrgImg/DSC_0694.JPG"
               alt="Great Atmosphere"
               className="w-full h-80 object-cover shadow-md"
             />

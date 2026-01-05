@@ -7,7 +7,7 @@ const Contact = () => {
       <div
         className="relative w-full h-[70vh] flex items-center justify-center text-center overflow-hidden"
         style={{
-          backgroundImage: "url('/assets/images/Ridley03.jpeg')",
+          backgroundImage: "url('/assets/images/OrgImg/DSC_0471.JPG')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -17,7 +17,7 @@ const Contact = () => {
           <h3 className="text-sm uppercase tracking-widest mb-2 text-green-300">
             Contact Us
           </h3>
-          <h1 className="text-4xl sm:text-5xl font-bold mb-4">Get in Touch</h1>
+          <h1 className="text-4xl sm:text-5xl font-poppins main-heading mb-4">Get in Touch</h1>
           <p className="text-gray-200">
             Have questions, want to visit Ridley Pub or make a reservation?  
             Drop us a message — we’re here to help.

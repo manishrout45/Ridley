@@ -11,15 +11,15 @@ const slides = [
   },
   {
     type: "image",
-    src: "/assets/images/OrgImg/Ridley_Img2.jpeg",
+    src: "/assets/images/OrgImg/DSC_0431.JPG",
     subheading: "Live Music Every Weekend",
     heading: "Dance & Chill\nAll Night Long",
     description:
       "Feel the energy with live bands and DJs that keep your night unforgettable.",
   },
   {
-    type: "video",
-    src: "/assets/videos/Ridley_Commingsoon.mp4",
+    type: "IMAGE",
+    src: "/assets/images/OrgImg/DSC_0429.JPG",
     subheading: "Premium Pub & Nightlife Experience",
     heading: "Where Good Drinks\nMeet Great Company",
     description:
@@ -43,25 +43,24 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Slides */}
-      {slides.map((s, index) => (
-        <div
-          key={index}
-          className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out
-            ${index === current ? "opacity-100 z-10 animate-kenburns" : "opacity-0 z-0"}`}
-        >
-          {s.type === "image" ? (
-            <img src={s.src} alt="hero" className="w-full h-full object-cover" />
-          ) : (
-            <video
-              src={s.src}
-              autoPlay
-              loop
-              muted
-              className="w-full h-full object-cover"
-            />
-          )}
-        </div>
-      ))}
+{slides.map((s, index) => (
+  <div
+    key={index}
+    className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out
+      ${
+        index === current
+          ? "opacity-100 z-10 animate-kenburns"
+          : "opacity-0 z-0"
+      }`}
+  >
+    <img
+      src={s.src}
+      alt="hero background"
+      className="w-full h-full object-cover"
+    />
+  </div>
+))}
+
 
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/70 z-20"></div>
@@ -78,7 +77,7 @@ const HeroSection = () => {
 
         <h1
           key={current + "-head"}
-          className="text-white font-extrabold drop-shadow-md text-3xl sm:text-5xl md:text-6xl leading-snug sm:leading-tight mb-3 md:mb-6 opacity-0 animate-fadeIn"
+          className="text-white font-poppins main-heading  drop-shadow-md text-3xl sm:text-5xl md:text-6xl leading-snug sm:leading-tight mb-3 md:mb-6 opacity-0 animate-fadeIn"
           style={{ animationDelay: "0.6s", whiteSpace: "pre-line" }}
         >
           {slide.heading}

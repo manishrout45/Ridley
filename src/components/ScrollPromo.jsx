@@ -31,7 +31,7 @@ const ScrollPromo = () => {
   <div
     className="fixed inset-0 bg-center bg-cover -z-10"
     style={{
-      backgroundImage: "url('/assets/images/img1.jpeg')"
+      backgroundImage: "url('/assets/images/OrgImg/Ridley_Img3.jpeg')"
     }}
   ></div>
       {/* Dark overlay */}
@@ -43,7 +43,7 @@ const ScrollPromo = () => {
         {/* Moving Text */}
         <div id="scrollText" className="space-y-4 sm:space-y-6 text-center">
 
-          <h2 className="main-heading text-white text-3xl sm:text-5xl font-bold leading-snug sm:leading-tight">
+          <h2 className="main-heading text-white text-3xl sm:text-5xl font-poppins leading-snug sm:leading-tight">
             Special Promotion <br /> For This Month!
           </h2>
 

@@ -60,7 +60,7 @@ const handleSubmit = async (e) => {
       <div className="absolute inset-0 bg-black/60"></div>
       <div className="relative z-10 w-full max-w-6xl flex flex-col items-center">
         <h3 className="text-green-300 text-sm mb-2 text-center tracking-widest">BOOK YOUR TABLE</h3>
-        <h2 className="text-white text-3xl sm:text-4xl font-bold mb-6 text-center leading-snug">
+        <h2 className="text-white text-3xl sm:text-4xl font-poppins main-heading mb-6 text-center leading-snug">
           Unlimited Fun Under One Roof <br />Pure Pub Energy Awaits
         </h2>
 
@@ -68,20 +68,34 @@ const handleSubmit = async (e) => {
           <img src="/assets/images/OrgImg/Ridley_Img3.jpeg" alt="Dining Area" className="rounded-xl shadow-lg w-full h-64 sm:h-80 md:h-full object-cover bounce-hover" />
 
           <div className="bg-white rounded-xl shadow-lg p-6 sm:p-10 md:p-6">
-            <div className="flex flex-col items-center justify-center mb-6 border-b pb-4 gap-3 text-sm">
-
+            {/* FORM HEADER */}
+<div className="mb-8">
+  {/* Call Us */}
   <div className="text-center">
-    <p className="text-gray-500">CALL US</p>
-    <p className="text-green-600 font-semibold">+91 9777 220 660</p>
+    <p className="text-xs tracking-widest text-gray-500 uppercase mb-1">
+      Call Us
+    </p>
+    <a
+      href="tel:+919777220660"
+      className="text-green-600 text-lg font-semibold hover:underline"
+    >
+      +91 9777 220 660
+    </a>
   </div>
 
-  {/* OR + Book Now as heading */}
-  <div className="flex items-center gap-2 text-gray-600 font-semibold">
-    <span>OR</span>
-  
+  {/* Divider */}
+  <div className="flex items-center my-6">
+    <div className="flex-grow h-px bg-gray-200"></div>
+    <span className="px-4 text-gray-400 text-sm font-semibold">OR</span>
+    <div className="flex-grow h-px bg-gray-200"></div>
   </div>
 
+  {/* Booking Text */}
+  <p className="text-center text-gray-600 text-sm">
+    Fill in the details below to reserve your table
+  </p>
 </div>
+
 
 
             <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4">

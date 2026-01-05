@@ -83,7 +83,7 @@ const Navbar = () => {
           <img
             src="/assets/images/logo/Ridleypub Logo PNG-02.png"
             alt="Ridley Logo"
-            className="h-24 sm:h-18 w-auto object-contain"
+            className="h-16 sm:h-20 w-auto object-contain"
           />
         </Link>
 

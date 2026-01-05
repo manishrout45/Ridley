@@ -26,7 +26,7 @@ const GallerySection = ({ className = "" }) => {
   return (
     <section className="relative w-full overflow-hidden py-10 bg-white ">
         <div className={`${className}`}>
-      <h2 className="main-heading text-3xl sm:text-4xl font-bold  text-gray-900 text-center mb-10">
+      <h2 className="main-heading text-3xl sm:text-4xl font-poppins  text-gray-900 text-center mb-10">
         Gallery
       </h2>
 
@@ -38,16 +38,16 @@ const GallerySection = ({ className = "" }) => {
       >
         {/* ITEM TEMPLATE */}
         {[
-          { img: "/assets/images/OrgImg/Ridley_Img2.jpeg", title: "STRONG ALCOHOL" },
-          { img: "/assets/images/OrgImg/Ridley_Img3.jpeg", title: "GREAT ATMOSPHERE" },
-          { img: "/assets/images/shish-kebab-with-colorful-bell-peppers-served-with-ketchup-fresh-vegetables.jpg", title: "DELICIOUS FOOD" },
-          { img: "/assets/images/OrgImg/Ridley_Img1.jpeg", title: "NIGHT PARTY" },
-          { img: "/assets/images/OrgImg/Ridley_Img4.jpeg", title: "SIGNATURE COCKTAILS" },
-          { img: "/assets/images/OrgImg/Ridley_Img2.jpeg", title: "STRONG ALCOHOL" },
-          { img: "/assets/images/OrgImg/Ridley_Img3.jpeg", title: "GREAT ATMOSPHERE" },
-          { img: "/assets/images/shish-kebab-with-colorful-bell-peppers-served-with-ketchup-fresh-vegetables.jpg", title: "DELICIOUS FOOD" },
-          { img: "/assets/images/OrgImg/Ridley_Img1.jpeg", title: "NIGHT PARTY" },
-          { img: "/assets/images/OrgImg/Ridley_Img4.jpeg", title: "SIGNATURE COCKTAILS" },
+          { img: "/assets/images/OrgImg/DSC_0758.JPG", title: "STRONG ALCOHOL" },
+          { img: "/assets/images/OrgImg/DSC_0673.JPG", title: "GREAT ATMOSPHERE" },
+          { img: "/assets/images/OrgImg/DSC_0644.JPG", title: "DELICIOUS FOOD" },
+          { img: "/assets/images/OrgImg/DSC_0702.JPG", title: "NIGHT PARTY" },
+          { img: "/assets/images/OrgImg/DSC_0491.JPG", title: "SIGNATURE COCKTAILS" },
+          { img: "/assets/images/OrgImg/DSC_0758.JPG", title: "STRONG ALCOHOL" },
+          { img: "/assets/images/OrgImg/DSC_0673.JPG", title: "GREAT ATMOSPHERE" },
+          { img: "/assets/images/OrgImg/DSC_0644.JPG", title: "DELICIOUS FOOD" },
+          { img: "/assets/images/OrgImg/DSC_0702.JPG", title: "NIGHT PARTY" },
+          { img: "/assets/images/OrgImg/DSC_0491.JPG", title: "SIGNATURE COCKTAILS" },
         ].map((item, index) => (
           <div
             key={index}
