@@ -134,28 +134,30 @@
   }
 
 /* Initial states */
-.fade-up {
+.fade-up,
+.fade-left,
+.fade-right,
+.zoom-in {
   opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease-out;
+  transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+  will-change: transform, opacity;
+}
+
+/* Directions */
+.fade-up {
+  transform: translateY(28px);
 }
 
 .fade-left {
-  opacity: 0;
-  transform: translateX(-40px);
-  transition: all 0.8s ease-out;
+  transform: translateX(-32px);
 }
 
 .fade-right {
-  opacity: 0;
-  transform: translateX(40px);
-  transition: all 0.8s ease-out;
+  transform: translateX(32px);
 }
 
 .zoom-in {
-  opacity: 0;
-  transform: scale(0.8);
-  transition: all 0.8s ease-out;
+  transform: scale(0.95);
 }
 
 /* When in view */
@@ -164,14 +166,15 @@
 .fade-right.in-view,
 .zoom-in.in-view {
   opacity: 1;
-  transform: translateX(0) translateY(0) scale(1);
+  transform: translate3d(0, 0, 0) scale(1);
 }
 
+/* Hover Zoom (GPU friendly) */
+.card-hover img {
+  transition: transform 0.4s ease;
+  will-change: transform;
+}
 
-  /* Hover Zoom */
-  .card-hover img {
-    transition: transform 0.5s ease;
-  }
-  .card-hover:hover img {
-    transform: scale(1.05);
-  }
+.card-hover:hover img {
+  transform: scale(1.03);
+}

@@ -88,7 +88,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex items-center bg-white bg-opacity-90 rounded-full px-4 py-2 space-x-2 shadow-lg">
+        <nav className="hidden md:flex items-center bg-white bg-opacity-90 rounded-full px-4 py-2 space-x-2 shadow-md">
           {["home", "about", "events", "gallery", "contact"].map((item) => (
             <Link
               key={item}

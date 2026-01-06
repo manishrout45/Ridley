@@ -38,7 +38,7 @@ const Home = () => {
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
       {/* Left Image */}
-      <div className="rounded-2xl overflow-hidden shadow-xl h-full flex transform transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl">
+      <div className="rounded-2xl overflow-hidden shadow-md h-full flex transform transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl">
         <img
           src="/assets/images/OrgImg/DSC_0702.JPG"
           className="w-full h-52 md:h-full object-cover transition-all duration-700 hover:scale-110"
@@ -46,8 +46,8 @@ const Home = () => {
       </div>
 
      {/* Center Card */}
-<div className="backdrop-blur-xl bg-white/30 border border-white/40 rounded-2xl shadow-xl p-6 text-center h-full flex flex-col justify-center 
-                transform transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl ">
+<div className="backdrop-blur-xl bg-white/30 border border-white/40 rounded-2xl shadow-md p-6 text-center h-full flex flex-col justify-center 
+                transform transition-all duration-700 hover:-translate-y-2 hover:shadow-lg ">
 
   <h2 className="
         text-xl 
@@ -86,7 +86,7 @@ const Home = () => {
 </div>
 
       {/* Right Card */}
-      <div className="rounded-2xl overflow-hidden bg-white shadow-xl h-full flex flex-col transform transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl">
+      <div className="rounded-2xl overflow-hidden bg-white shadow-lg h-full flex flex-col transform transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl">
         <img
           src="/assets/images/OrgImg/DSC_0429.JPG"
           className="w-full h-44 md:h-full object-cover transition-all duration-700 hover:scale-110"
@@ -105,20 +105,20 @@ const Home = () => {
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
 
       {/* Left Image */}
-      <div className="relative rounded-2xl overflow-hidden shadow-xl h-full flex transform transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl">
+      <div className="relative rounded-2xl overflow-hidden shadow-lg h-full flex transform transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl">
         <img
           src="/assets/images/OrgImg/Ridley_Img2.jpeg"
           className="w-full h-52 md:h-full object-cover transition-all duration-700 hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/70"></div>
 
-        <h2 className="absolute bottom-4 left-4 text-white text-lg md:text-xl font-bold leading-snug drop-shadow-xl">
+        <h2 className="absolute bottom-4 left-4 text-white text-lg md:text-xl font-bold leading-snug drop-shadow-lg">
           SOPHISTICATED<br />INTERIOR DESIGN
         </h2>
       </div>
 
       {/* Center Card */}
-      <div className="bg-gradient-to-b from-white to-[#fff8f2] rounded-2xl shadow-xl p-8 text-center border border-green-200 h-full flex flex-col justify-center 
+      <div className="bg-gradient-to-b from-white to-[#fff8f2] rounded-2xl shadow-lg p-8 text-center border border-green-200 h-full flex flex-col justify-center 
                       transform transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl">
 
         <div className="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden shadow-md mx-auto mb-4 ring-2 ring-green-100">
@@ -263,25 +263,25 @@ const Home = () => {
 
 
     <GallerySection className="zoom-in" />
-    <HeroVideoSection className="zoom-in" />
+    <HeroVideoSection />
 
       {/* Private Dining Section */}
-<section className="fade-left py-16 px-4 bg-white">
+<section className="py-16 px-4 bg-white">
   
   {/* Content Wrapper (max-width applied here) */}
-  <div className="max-w-7xl mx-auto  grid md:grid-cols-2 gap-12 items-center">
+  <div className="fade-left max-w-7xl mx-auto  grid md:grid-cols-2 gap-12 items-center">
 
     {/* Left: Image Grid */}
     <div className="grid grid-cols-2 gap-4">
       <img src="/assets/images/OrgImg/Ridley_Img3.jpeg" alt="" className="rounded-md object-cover w-full h-48" />
       <img src="/assets/images/OrgImg/DSC_0634.JPG" alt="" className="rounded-md object-cover w-full h-48" />
-      <img src="/assets/images/OrgImg/Ridley_Img4.jpeg" alt="" className="rounded-md object-cover w-full h-48" />
       <img src="/assets/images/OrgImg/DSC_0597.JPG" alt="" className="rounded-md object-cover w-full h-48" />
+      <img src="/assets/images/OrgImg/Ridley_Img4.jpeg" alt="" className="rounded-md object-cover w-full h-48" />
     </div>
 
     {/* Right: Text */}
     <div className="text-center md:text-left">
-      <h2 className="text-3xl font-serif font-poppins main-heading mb-6 text-gray-800">
+      <h2 className="text-3xl  font-poppins main-heading mb-6 text-gray-800">
         Private dining<br />& events
       </h2>
 

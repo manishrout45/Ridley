@@ -65,9 +65,9 @@ const handleSubmit = async (e) => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
-          <img src="/assets/images/OrgImg/Ridley_Img3.jpeg" alt="Dining Area" className="rounded-xl shadow-lg w-full h-64 sm:h-80 md:h-full object-cover bounce-hover" />
+          <img src="/assets/images/OrgImg/Ridley_Img3.jpeg" alt="Dining Area" className="rounded-xl shadow-md w-full h-64 sm:h-80 md:h-full object-cover bounce-hover" />
 
-          <div className="bg-white rounded-xl shadow-lg p-6 sm:p-10 md:p-6">
+          <div className="bg-white rounded-xl shadow-md p-6 sm:p-10 md:p-6">
             {/* FORM HEADER */}
 <div className="mb-8">
   {/* Call Us */}
