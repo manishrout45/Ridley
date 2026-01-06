@@ -53,7 +53,7 @@ const ScrollPromo = () => {
 
           <button
             className="shine-btn mt-4 sm:mt-6 bg-white text-gray-900 font-semibold 
-                       px-4 sm:px-6 py-2 sm:py-3 shadow-sm hover:bg-gray-200 transition"
+                       px-4 sm:px-6 py-2 sm:py-3 shadow-sm rounded-md hover:bg-gray-200 transition"
           >
             RESERVATION
           </button>

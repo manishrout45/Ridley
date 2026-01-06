@@ -45,45 +45,59 @@ const Home = () => {
         />
       </div>
 
-     {/* Center Card */}
-<div className="backdrop-blur-xl bg-white/30 border border-white/40 rounded-2xl shadow-md p-6 text-center h-full flex flex-col justify-center 
-                transform transition-all duration-700 hover:-translate-y-2 hover:shadow-lg ">
+     {/* Center Card with Background Image & Hover Effect */}
+<div className="relative rounded-2xl overflow-hidden shadow-md h-full flex items-center justify-center transform transition-all duration-700 
+                group hover:-translate-y-2 hover:shadow-lg">
 
-  <h2 className="
+  {/* Background Image */}
+  <div
+    className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+    style={{ backgroundImage: "url('/assets/images/OrgImg/DSC_0398.JPG')" }}
+  ></div>
+
+  {/* White Transparent Overlay */}
+  <div className="absolute inset-0 bg-white/80 transition-all duration-700 group-hover:bg-white/60"></div>
+
+  {/* Content */}
+  <div className="relative text-center p-6 flex flex-col justify-center h-full">
+    <h2 className="
         text-xl 
         md:text-2xl 
-        lg:text-4xl          /* BIG SIZE ONLY ON DESKTOP */
+        lg:text-4xl
         font-poppins main-heading text-gray-900 mb-3 leading-snug
+        transition-all duration-700 group-hover:text-gray-800
       ">
-    EXPERIENCE THE  
-    <span className="text-green-700"> NEXT ERA </span>
-    <br /> OF DINING
-  </h2>
+      EXPERIENCE THE  
+      <span className="text-green-700"> NEXT ERA </span>
+      <br /> OF DINING
+    </h2>
 
-  <p className="
+    <p className="
         text-gray-700 
         text-sm 
-        md:text-base         /* Slightly bigger on tablet */
-        lg:text-lg           /* Bigger on desktop */
+        md:text-base
+        lg:text-lg
         leading-relaxed
+        transition-all duration-700 group-hover:text-gray-900
       ">
-    Crafted with premium ingredients and refined techniques, setting a new standard in quality and excellence.
-  </p>
+      Crafted with premium ingredients and refined techniques, setting a new standard in quality and excellence.
+    </p>
 
-<button
-  className="
-    mt-4 bg-green-700 hover:bg-green-800 text-white
-    px-4 py-2 rounded-full 
-    text-xs md:text-sm 
-    tracking-normal md:tracking-wide lg:tracking-normal 
-    transition-all duration-500 shadow-md hover:shadow-lg
-    lg:px-2 w-[22vh] 
-    mx-auto                /* 🔥 CENTER THE BUTTON */
-  "
->
-  EXPLORE MORE
-</button>
+    <button className="
+      mt-4 bg-green-700 hover:bg-green-800 text-white
+      px-4 py-2 rounded-full 
+      text-xs md:text-sm 
+      tracking-normal md:tracking-wide lg:tracking-normal 
+      transition-all duration-500 shadow-md hover:shadow-lg
+      lg:px-2 w-[22vh] 
+      mx-auto
+      transform group-hover:scale-105
+    ">
+      EXPLORE MORE
+    </button>
+  </div>
 </div>
+
 
       {/* Right Card */}
       <div className="rounded-2xl overflow-hidden bg-white shadow-lg h-full flex flex-col transform transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl">
